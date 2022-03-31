@@ -14,6 +14,11 @@ $billy:(#1F1B34, #3d317a);
     align-items: center;
 }
 
+@mixin color_marge_paragraphe {
+    color: $color;
+    margin: 1rem;
+}
+
 @mixin animation {
     animation-name: opacity;
     animation-duration: 3s;
@@ -27,8 +32,9 @@ $billy:(#1F1B34, #3d317a);
 
 body {
     font-family: sans-serif serif;
-    background-image: linear-gradient($billy);
+    //background-image: linear-gradient($billy);
     //background-color: #060c24;
+    background: black;
     height: 100vh;
     .container {
         height: 100%;
@@ -40,11 +46,11 @@ body {
 header {
     background-color: $theme;
     .header_container {
+        margin-top: 5px;
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
-        margin-top: 30px;
         .bars {
             display: none;
             font-size: 2rem;
@@ -156,6 +162,43 @@ header {
     */
 }
 
+main {
+    margin: 1rem;
+    .main_container {
+        height: 100%;
+        .image_btc {
+            border: 1px solid black;
+            //display: flex;
+            #btc {
+                margin: 1rem;
+                width: 400px;
+                height: 300px;
+                object-fit: cover;
+                box-shadow: 5px 1px $theme;
+                float: left;
+            }
+            p {
+                @include color_marge_paragraphe();
+            }
+            h3+ul {
+                display: inline-block
+            }
+            p+h3 {
+                @include color_marge_paragraphe();
+            }
+            h3+ul,
+            h3+ul+h3 {
+                @include color_marge_paragraphe();
+                list-style-type: square;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: red;
+}
+
 @keyframes opacity {
     0% {
         opacity: 0
@@ -182,13 +225,12 @@ header {
     header {
         color: black;
         .header_container {
-            position: relative;
             display: flex;
             justify-content: space-between;
             align-items: center;
             ul {
                 position: absolute;
-                top: 55px;
+                top: 88px;
                 height: 500px;
                 width: 100%;
                 display: flex;
@@ -204,6 +246,10 @@ header {
                 flex-direction: column;
                 justify-content: space-between;
             }
+            ul,
+            .acces {
+                transform: translate(-100%);
+            }
             .bars {
                 color: white;
                 cursor: pointer;
@@ -211,11 +257,6 @@ header {
                 display: block;
                 right: 5px;
                 border-style: s;
-            }
-            .acces,
-            ul {
-                transform: translateX(-100%);
-                z-index: 20;
             }
             .logo {
                 img {
@@ -227,4 +268,8 @@ header {
             }
         }
     }
+}
+
+.transform {
+    transform: translateX(0);
 }

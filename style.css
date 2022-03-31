@@ -7,8 +7,7 @@
 
 body {
   font-family: sans-serif serif;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1F1B34), to(#3d317a));
-  background-image: linear-gradient(#1F1B34, #3d317a);
+  background: black;
   height: 100vh;
 }
 
@@ -38,6 +37,7 @@ header {
 }
 
 header .header_container {
+  margin-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +48,6 @@ header .header_container {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 30px;
 }
 
 header .header_container .bars {
@@ -190,6 +189,54 @@ header .header_container .acces .btn_inscription:hover {
           animation-duration: 2s;
 }
 
+main {
+  margin: 1rem;
+}
+
+main .main_container {
+  height: 100%;
+}
+
+main .main_container .image_btc {
+  border: 1px solid black;
+}
+
+main .main_container .image_btc #btc {
+  margin: 1rem;
+  width: 400px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 5px 1px #110D26;
+          box-shadow: 5px 1px #110D26;
+  float: left;
+}
+
+main .main_container .image_btc p {
+  color: white;
+  margin: 1rem;
+}
+
+main .main_container .image_btc h3 + ul {
+  display: inline-block;
+}
+
+main .main_container .image_btc p + h3 {
+  color: white;
+  margin: 1rem;
+}
+
+main .main_container .image_btc h3 + ul,
+main .main_container .image_btc h3 + ul + h3 {
+  color: white;
+  margin: 1rem;
+  list-style-type: square;
+}
+
+footer {
+  background-color: red;
+}
+
 @-webkit-keyframes opacity {
   0% {
     opacity: 0;
@@ -231,7 +278,6 @@ header .header_container .acces .btn_inscription:hover {
     color: black;
   }
   header .header_container {
-    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -244,7 +290,7 @@ header .header_container .acces .btn_inscription:hover {
   }
   header .header_container ul {
     position: absolute;
-    top: 55px;
+    top: 88px;
     height: 500px;
     width: 100%;
     display: -webkit-box;
@@ -274,6 +320,11 @@ header .header_container .acces .btn_inscription:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+  header .header_container ul,
+  header .header_container .acces {
+    -webkit-transform: translate(-100%);
+            transform: translate(-100%);
+  }
   header .header_container .bars {
     color: white;
     cursor: pointer;
@@ -282,17 +333,16 @@ header .header_container .acces .btn_inscription:hover {
     right: 5px;
     border-style: s;
   }
-  header .header_container .acces,
-  header .header_container ul {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    z-index: 20;
-  }
   header .header_container .logo img {
     position: relative;
     left: 5px;
     width: 50px;
     height: 50px;
   }
+}
+
+.transform {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /*# sourceMappingURL=style.css.map */

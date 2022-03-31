@@ -29,20 +29,21 @@ metavers.addEventListener('mouseover', function(e) {
 
 
 
-document.getElementById('ouvrir').addEventListener('click', function() {
-    document.getElementById('menu').style.transform = 'translateX(0)';
-    document.getElementById('menu').style.transition = 'transform 2s';
-    document.getElementById('acces').style.transform = 'translateX(0)';
-    document.getElementById('acces').style.transition = 'transform 2s';
-    document.getElementById('ouvrir').addEventListener('click', function() {
-        document.getElementById('menu').style.display = 'none';
-        document.getElementById('acces').style.display = 'none';
+function click() {
+    document.getElementById('ouvrir').addEventListener('click', function(e1) {
+        document.getElementById('menu').style.transform = 'translateX(0)';
+        document.getElementById('menu').style.transition = 'transform 2s';
+        document.getElementById('acces').style.transform = 'translateX(0)';
+        document.getElementById('acces').style.transition = 'transform 2s';
+        console.log(e1);
+        document.getElementById('ouvrir').addEventListener('click', function(e2) {
+            document.getElementById('menu').style.transform = 'translateX(-100%)';
+            document.getElementById('acces').style.transform = 'translateX(-100%)';
+            console.log(e2);
+        })
     })
-})
-
-
-
-
+}
+click();
 /*
 function myFunction() {
     const menu = document.getElementById('menu');
