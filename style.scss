@@ -167,7 +167,7 @@ main {
     margin: 1rem;
     .main_container {
         height: 100%;
-        .image_btc {
+        .bloc_btc {
             border: 1px solid black;
             //display: flex;
             #btc {
@@ -227,12 +227,12 @@ footer {
         color: black;
         .header_container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
             ul {
                 position: absolute;
                 top: 0px;
-                height: 100vh;
+                height: 66rem;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
@@ -242,12 +242,14 @@ footer {
             .acces {
                 position: absolute;
                 background-color: $theme;
-                height: 30%;
                 width: 100%;
-                bottom: 0px;
+                padding-bottom: 1rem;
+                top: 66rem;
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
+                justify-content: center;
+                .btn_connexion {
+                    margin-right: 2rem;
+                }
             }
             ul,
             .acces {
@@ -269,6 +271,17 @@ footer {
                     left: 5px;
                     width: 50px;
                     height: 50px;
+                }
+            }
+        }
+    }
+    main {
+        .main_container {
+            .bloc_btc {
+                #btc {
+                    width: 120px;
+                    height: 100px;
+                    object-fit: cover;
                 }
             }
         }
