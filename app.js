@@ -27,8 +27,25 @@ metavers.addEventListener('mouseover', function(e) {
     })
 })
 
+let ouvrir = document.querySelector('.ouvrir');
+let liste = document.querySelector('.liste');
+let acces = document.querySelector('.acces')
+ouvrir.addEventListener('click', function() {
+    if (liste.style.transform == 'translateX(-100%)') {
+        liste.style.transform = 'translateX(0)';
+        liste.style.transition = 'transform 2s';
+        acces.style.transform = 'translateX(0)';
+        acces.style.transition = 'transform 2s';
+
+    } else {
+        liste.style.transform = 'translateX(-100%)';
+        acces.style.transform = 'translateX(-100%)';
+        //liste.style.position = 'relative';
+    }
+})
 
 
+/*
 function click() {
     document.getElementById('ouvrir').addEventListener('click', function(e1) {
         document.getElementById('menu').style.transform = 'translateX(0)';
@@ -44,16 +61,4 @@ function click() {
     })
 }
 click();
-/*
-function myFunction() {
-    const menu = document.getElementById('menu');
-    if (menu.style.transform === ('translateX(-100%)')) {
-        menu.style.transform = 'translateX(0)';
-        menu.style.transition = 'transform 2s';
-
-    } else {
-        menu.style.transform = 'translateX(-100%)';
-    }
-}
-
 */

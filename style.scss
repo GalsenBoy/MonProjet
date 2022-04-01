@@ -48,6 +48,7 @@ header {
     .header_container {
         margin-top: 5px;
         display: flex;
+        position: relative;
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
@@ -230,25 +231,27 @@ footer {
             align-items: center;
             ul {
                 position: absolute;
-                top: 88px;
-                height: 500px;
+                top: 0px;
+                height: 100vh;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-around;
+                background-color: $theme;
             }
             .acces {
                 position: absolute;
-                height: 180px;
+                background-color: $theme;
+                height: 30%;
                 width: 100%;
-                top: 680px;
+                bottom: 0px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: space-around;
             }
             ul,
             .acces {
-                transform: translate(-100%);
+                transform: translateX(-100%);
             }
             .bars {
                 color: white;
@@ -257,8 +260,10 @@ footer {
                 display: block;
                 right: 5px;
                 border-style: s;
+                z-index: 1;
             }
             .logo {
+                z-index: 1;
                 img {
                     position: relative;
                     left: 5px;
@@ -268,8 +273,4 @@ footer {
             }
         }
     }
-}
-
-.transform {
-    transform: translateX(0);
 }
