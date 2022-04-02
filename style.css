@@ -21,19 +21,6 @@ body .container {
 
 header {
   background-color: #110D26;
-  /*
-    .div_essaie {
-        border: 1px solid white;
-        position: absolute;
-        left: 180px;
-        width: 195px;
-        height: 190px;
-        ul {
-            list-style: none;
-            width: 100%;
-        }
-    }
-    */
 }
 
 header .header_container {
@@ -124,8 +111,8 @@ header .header_container ul ul {
   color: white;
   -webkit-animation-name: opacity;
           animation-name: opacity;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
 }
 
 header .header_container ul ul li a {
@@ -304,6 +291,13 @@ footer {
         justify-content: space-around;
     background-color: #110D26;
   }
+  header .header_container ul .fa-angle-down {
+    display: none;
+  }
+  header .header_container ul .fa-angle-down ul,
+  header .header_container ul li ul {
+    visibility: hidden;
+  }
   header .header_container .acces {
     position: absolute;
     background-color: #110D26;
@@ -324,6 +318,8 @@ footer {
   header .header_container .acces {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
   }
   header .header_container .bars {
     color: white;
@@ -344,10 +340,22 @@ footer {
     height: 50px;
   }
   main .main_container .bloc_btc #btc {
-    width: 120px;
-    height: 100px;
+    width: 150px;
+    height: 110px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  .open .acces {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
+  }
+  .open .liste {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: 1.2s;
+    transition: 1.2s;
   }
 }
 /*# sourceMappingURL=style.css.map */

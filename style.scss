@@ -97,7 +97,7 @@ header {
                 background-color: rgb(226, 224, 224);
                 color: $color;
                 animation-name: opacity;
-                animation-duration: 3s;
+                animation-duration: 1.2s;
                 li a {
                     color: black;
                     display: block;
@@ -148,19 +148,6 @@ header {
             }
         }
     }
-    /*
-    .div_essaie {
-        border: 1px solid white;
-        position: absolute;
-        left: 180px;
-        width: 195px;
-        height: 190px;
-        ul {
-            list-style: none;
-            width: 100%;
-        }
-    }
-    */
 }
 
 main {
@@ -238,6 +225,15 @@ footer {
                 flex-direction: column;
                 justify-content: space-around;
                 background-color: $theme;
+                .fa-angle-down {
+                    display: none;
+                }
+                .fa-angle-down,
+                li {
+                    ul {
+                        visibility: hidden;
+                    }
+                }
             }
             .acces {
                 position: absolute;
@@ -254,6 +250,7 @@ footer {
             ul,
             .acces {
                 transform: translateX(-100%);
+                transition: 1.2s;
             }
             .bars {
                 color: white;
@@ -279,11 +276,19 @@ footer {
         .main_container {
             .bloc_btc {
                 #btc {
-                    width: 120px;
-                    height: 100px;
+                    width: 150px;
+                    height: 110px;
                     object-fit: cover;
                 }
             }
         }
+    }
+    .open .acces {
+        transform: translateX(0);
+        transition: 1.2s;
+    }
+    .open .liste {
+        transform: translateX(0);
+        transition: 1.2s;
     }
 }
