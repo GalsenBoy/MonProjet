@@ -289,6 +289,8 @@ footer {
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
     background-color: #110D26;
   }
   header .header_container ul .fa-angle-down {
@@ -314,20 +316,12 @@ footer {
   header .header_container .acces .btn_connexion {
     margin-right: 2rem;
   }
-  header .header_container ul,
-  header .header_container .acces {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    -webkit-transition: 1.2s;
-    transition: 1.2s;
-  }
   header .header_container .bars {
     color: white;
     cursor: pointer;
     position: relative;
     display: block;
     right: 5px;
-    border-style: s;
     z-index: 1;
   }
   header .header_container .logo {
@@ -345,12 +339,7 @@ footer {
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .open .acces {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    -webkit-transition: 1.2s;
-    transition: 1.2s;
-  }
+  .open .acces,
   .open .liste {
     -webkit-transform: translateX(0);
             transform: translateX(0);
