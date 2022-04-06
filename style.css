@@ -7,7 +7,7 @@
 
 body {
   font-family: sans-serif serif;
-  background: black;
+  background-color: #1c1542;
   height: 100vh;
 }
 
@@ -178,47 +178,94 @@ header .header_container .acces .btn_inscription:hover {
 }
 
 main {
-  margin: 1rem;
+  margin-top: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main .main_container {
+  width: 75%;
   height: 100%;
 }
 
+main .main_container .titre {
+  border: 1px solid white;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main_container .titre h1 {
+  color: white;
+  font-weight: bold;
+}
+
 main .main_container .bloc_btc {
-  border: 1px solid black;
+  padding-top: 2rem;
+  color: white;
 }
 
 main .main_container .bloc_btc #btc {
-  margin: 1rem;
-  width: 400px;
-  height: 300px;
+  width: 50%;
+  height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 5px 1px #110D26;
-          box-shadow: 5px 1px #110D26;
   float: left;
+  padding: 0 6px 0 16px;
+  padding-top: 1rem;
 }
 
-main .main_container .bloc_btc p {
-  color: white;
-  margin: 1rem;
-}
-
-main .main_container .bloc_btc h3 + ul {
+main .main_container .bloc_btc .text_btc ul {
   display: inline-block;
+  padding-left: 2rem;
 }
 
-main .main_container .bloc_btc p + h3 {
-  color: white;
+main .main_container .bloc_btc .text_btc p,
+main .main_container .bloc_btc .text_btc h3 {
   margin: 1rem;
 }
 
-main .main_container .bloc_btc h3 + ul,
-main .main_container .bloc_btc h3 + ul + h3 {
+main .main_container h2 {
+  border: 1px solid white;
+}
+
+main .main_container .bloc_nft .text_nft {
   color: white;
-  margin: 1rem;
-  list-style-type: square;
+  padding-left: 1rem;
+}
+
+main .main_container .bloc_nft .text_nft p {
+  margin: 1rem 0;
+}
+
+main .main_container .bloc_nft .text_nft h3 {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+main .main_container .bloc_nft .text_nft ol {
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 footer {
@@ -338,6 +385,9 @@ footer {
     height: 110px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  main .main_container .bloc_text_nft {
+    color: white;
   }
   .open .acces,
   .open .liste {

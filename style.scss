@@ -34,7 +34,7 @@ body {
     font-family: sans-serif serif;
     //background-image: linear-gradient($billy);
     //background-color: #060c24;
-    background: black;
+    background-color: #1c1542;
     height: 100vh;
     .container {
         height: 100%;
@@ -151,33 +151,69 @@ header {
 }
 
 main {
-    margin: 1rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
     .main_container {
+        //border: 1px solid white;
+        width: 75%;
         height: 100%;
+        .titre {
+            border: 1px solid white;
+            height: 100px;
+            @include flex();
+            h1 {
+                color: $color;
+                font-weight: bold;
+            }
+        }
         .bloc_btc {
-            border: 1px solid black;
+            padding-top: 2rem;
+            //border: 1px solid black;
+            color: $color;
             //display: flex;
             #btc {
-                margin: 1rem;
-                width: 400px;
-                height: 300px;
+                //margin: 1rem;
+                width: 50%;
+                height: 50%;
                 object-fit: cover;
-                box-shadow: 5px 1px $theme;
+                //box-shadow: 5px 5px #001B4F;
                 float: left;
+                padding: 0 6px 0 16px;
+                padding-top: 1rem;
             }
-            p {
-                @include color_marge_paragraphe();
+            .text_btc {
+                //float: right;
+                ul {
+                    display: inline-block;
+                    padding-left: 2rem;
+                }
+                p,
+                h3 {
+                    margin: 1rem;
+                }
             }
-            h3+ul {
-                display: inline-block
-            }
-            p+h3 {
-                @include color_marge_paragraphe();
-            }
-            h3+ul,
-            h3+ul+h3 {
-                @include color_marge_paragraphe();
-                list-style-type: square;
+        }
+        h2 {
+            border: 1px solid white;
+        }
+        .bloc_nft {
+            .text_nft {
+                color: $color;
+                padding-left: 1rem;
+                p {
+                    margin: 1rem 0;
+                }
+                h3 {
+                    text-align: center;
+                    padding-bottom: 1rem;
+                }
+                ol {
+                    border: 1px solid white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
             }
         }
     }
@@ -275,6 +311,9 @@ footer {
                     height: 110px;
                     object-fit: cover;
                 }
+            }
+            .bloc_text_nft {
+                color: $color;
             }
         }
     }
