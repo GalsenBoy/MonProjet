@@ -190,7 +190,7 @@ main {
                 }
                 p,
                 h3 {
-                    margin: 1rem;
+                    padding: 1rem;
                 }
             }
         }
@@ -202,7 +202,7 @@ main {
                 color: $color;
                 padding-left: 1rem;
                 p {
-                    margin: 1rem 0;
+                    padding: 1rem;
                 }
                 h3 {
                     text-align: center;
@@ -212,12 +212,35 @@ main {
                 th,
                 td {
                     border: 1px solid $color;
+                    text-align: center;
+                    padding: 8px;
+                }
+                table {
+                    tr:nth-child(even) {
+                        background-color: $color;
+                        color: #1c1542;
+                    }
                 }
                 ol {
                     border: 1px solid white;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
+                    padding: 1rem;
+                    li a {
+                        text-decoration: none;
+                        color: $color;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+        .bloc_metavers {
+            .text_metavers {
+                color: $color;
+                margin-left: 1rem;
+                p {
+                    padding: 1em;
                 }
             }
         }
@@ -314,6 +337,11 @@ footer {
     }
     main {
         .main_container {
+            h2 {
+                color: $color;
+                font-size: 1.5rem;
+                width: 280px;
+            }
             .titre {
                 h1 {
                     font-size: 1.5rem;
