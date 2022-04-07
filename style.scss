@@ -208,6 +208,11 @@ main {
                     text-align: center;
                     padding-bottom: 1rem;
                 }
+                tr,
+                th,
+                td {
+                    border: 1px solid $color;
+                }
                 ol {
                     border: 1px solid white;
                     display: flex;
@@ -274,7 +279,7 @@ footer {
             }
             .acces {
                 position: absolute;
-                background-color: $theme;
+                //background-color: $theme;
                 width: 100%;
                 padding-bottom: 1rem;
                 top: 66rem;
@@ -282,6 +287,10 @@ footer {
                 justify-content: center;
                 .btn_connexion {
                     margin-right: 2rem;
+                    display: none;
+                }
+                .btn_inscription {
+                    display: none;
                 }
             }
             .bars {
@@ -305,6 +314,11 @@ footer {
     }
     main {
         .main_container {
+            .titre {
+                h1 {
+                    font-size: 1.5rem;
+                }
+            }
             .bloc_btc {
                 #btc {
                     width: 150px;
@@ -317,7 +331,6 @@ footer {
             }
         }
     }
-    .open .acces,
     .open .liste {
         transform: translateX(0);
         transition: 1.2s;

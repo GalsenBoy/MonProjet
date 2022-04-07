@@ -254,6 +254,12 @@ main .main_container .bloc_nft .text_nft h3 {
   padding-bottom: 1rem;
 }
 
+main .main_container .bloc_nft .text_nft tr,
+main .main_container .bloc_nft .text_nft th,
+main .main_container .bloc_nft .text_nft td {
+  border: 1px solid white;
+}
+
 main .main_container .bloc_nft .text_nft ol {
   border: 1px solid white;
   display: -webkit-box;
@@ -349,7 +355,6 @@ footer {
   }
   header .header_container .acces {
     position: absolute;
-    background-color: #110D26;
     width: 100%;
     padding-bottom: 1rem;
     top: 66rem;
@@ -362,6 +367,10 @@ footer {
   }
   header .header_container .acces .btn_connexion {
     margin-right: 2rem;
+    display: none;
+  }
+  header .header_container .acces .btn_inscription {
+    display: none;
   }
   header .header_container .bars {
     color: white;
@@ -380,6 +389,9 @@ footer {
     width: 50px;
     height: 50px;
   }
+  main .main_container .titre h1 {
+    font-size: 1.5rem;
+  }
   main .main_container .bloc_btc #btc {
     width: 150px;
     height: 110px;
@@ -389,7 +401,6 @@ footer {
   main .main_container .bloc_text_nft {
     color: white;
   }
-  .open .acces,
   .open .liste {
     -webkit-transform: translateX(0);
             transform: translateX(0);
