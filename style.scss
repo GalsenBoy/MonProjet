@@ -32,8 +32,6 @@ $billy:(#1F1B34, #3d317a);
 
 body {
     font-family: sans-serif serif;
-    //background-image: linear-gradient($billy);
-    //background-color: #060c24;
     background-color: #1c1542;
     height: 100vh;
     .container {
@@ -155,7 +153,6 @@ main {
     display: flex;
     justify-content: center;
     .main_container {
-        //border: 1px solid white;
         width: 75%;
         height: 100%;
         .titre {
@@ -169,21 +166,16 @@ main {
         }
         .bloc_btc {
             padding-top: 2rem;
-            //border: 1px solid black;
             color: $color;
-            //display: flex;
             #btc {
-                //margin: 1rem;
                 width: 50%;
                 height: 50%;
                 object-fit: cover;
-                //box-shadow: 5px 5px #001B4F;
                 float: left;
                 padding: 0 6px 0 16px;
                 padding-top: 1rem;
             }
             .text_btc {
-                //float: right;
                 ul {
                     display: inline-block;
                     padding-left: 2rem;
@@ -191,6 +183,17 @@ main {
                 p,
                 h3 {
                     padding: 1rem;
+                }
+            }
+            .bloc_bnb {
+                //border: 1px solid white;
+                #bnb {
+                    width: 25%;
+                    height: 25%;
+                    float: right;
+                    object-fit: cover;
+                    border-radius: 10%;
+                    padding-top: 1rem;
                 }
             }
         }
@@ -208,17 +211,23 @@ main {
                     text-align: center;
                     padding-bottom: 1rem;
                 }
-                tr,
-                th,
-                td {
-                    border: 1px solid $color;
-                    text-align: center;
-                    padding: 8px;
-                }
-                table {
-                    tr:nth-child(even) {
-                        background-color: $color;
-                        color: #1c1542;
+                .table_top {
+                    display: flex;
+                    justify-content: center;
+                    overflow-x: auto;
+                    padding-bottom: 1rem;
+                    table {
+                        tr:nth-child(even) {
+                            background-color: $color;
+                            color: #1c1542;
+                        }
+                        tr,
+                        th,
+                        td {
+                            border: 1px solid $color;
+                            text-align: center;
+                            padding: 8px;
+                        }
                     }
                 }
                 ol {
@@ -317,18 +326,18 @@ footer {
                 }
             }
             .bars {
-                color: white;
-                cursor: pointer;
-                position: relative;
                 display: block;
-                right: 5px;
                 z-index: 1;
+                i {
+                    //position: relative;
+                    //right: 10px;
+                    color: $color;
+                    cursor: pointer;
+                }
             }
             .logo {
                 z-index: 1;
                 img {
-                    position: relative;
-                    left: 5px;
                     width: 50px;
                     height: 50px;
                 }
@@ -339,23 +348,10 @@ footer {
         .main_container {
             h2 {
                 color: $color;
-                font-size: 1.5rem;
-                width: 280px;
+                padding-left: 1rem;
             }
-            .titre {
-                h1 {
-                    font-size: 1.5rem;
-                }
-            }
-            .bloc_btc {
-                #btc {
-                    width: 150px;
-                    height: 110px;
-                    object-fit: cover;
-                }
-            }
-            .bloc_text_nft {
-                color: $color;
+            .titre_metavers {
+                margin-top: 0.7rem;
             }
         }
     }

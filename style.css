@@ -236,6 +236,16 @@ main .main_container .bloc_btc .text_btc h3 {
   padding: 1rem;
 }
 
+main .main_container .bloc_btc .bloc_bnb #bnb {
+  width: 25%;
+  height: 25%;
+  float: right;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10%;
+  padding-top: 1rem;
+}
+
 main .main_container h2 {
   border: 1px solid white;
 }
@@ -254,17 +264,28 @@ main .main_container .bloc_nft .text_nft h3 {
   padding-bottom: 1rem;
 }
 
-main .main_container .bloc_nft .text_nft tr,
-main .main_container .bloc_nft .text_nft th,
-main .main_container .bloc_nft .text_nft td {
+main .main_container .bloc_nft .text_nft .table_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+
+main .main_container .bloc_nft .text_nft .table_top table tr:nth-child(even) {
+  background-color: white;
+  color: #1c1542;
+}
+
+main .main_container .bloc_nft .text_nft .table_top table tr,
+main .main_container .bloc_nft .text_nft .table_top table th,
+main .main_container .bloc_nft .text_nft .table_top table td {
   border: 1px solid white;
   text-align: center;
   padding: 8px;
-}
-
-main .main_container .bloc_nft .text_nft table tr:nth-child(even) {
-  background-color: white;
-  color: #1c1542;
 }
 
 main .main_container .bloc_nft .text_nft ol {
@@ -396,38 +417,26 @@ footer {
     display: none;
   }
   header .header_container .bars {
+    display: block;
+    z-index: 1;
+  }
+  header .header_container .bars i {
     color: white;
     cursor: pointer;
-    position: relative;
-    display: block;
-    right: 5px;
-    z-index: 1;
   }
   header .header_container .logo {
     z-index: 1;
   }
   header .header_container .logo img {
-    position: relative;
-    left: 5px;
     width: 50px;
     height: 50px;
   }
   main .main_container h2 {
     color: white;
-    font-size: 1.5rem;
-    width: 280px;
+    padding-left: 1rem;
   }
-  main .main_container .titre h1 {
-    font-size: 1.5rem;
-  }
-  main .main_container .bloc_btc #btc {
-    width: 150px;
-    height: 110px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  main .main_container .bloc_text_nft {
-    color: white;
+  main .main_container .titre_metavers {
+    margin-top: 0.7rem;
   }
   .open .liste {
     -webkit-transform: translateX(0);
