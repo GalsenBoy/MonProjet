@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Base du projet</title>
 </head>
 
@@ -16,11 +16,15 @@
         <header>
             <div class="header_container">
                 <div class="logo">
-                    <img src="mon_logo.png" alt="Apcrypto">
+                    <img src="./image/mon_logo.png" alt="Apcrypto">
                 </div>
-                <div class="bars">
-                    <i class="fa-solid fa-bars ouvrir" id="ouvrir"></i>
-                </div>
+                <button class="box">
+                        <div class="container-lignes">
+                            <div class="ligne"></div>
+                            <div  class="ligne"></div>
+                            <div  class="ligne"></div>
+                        </div>
+                </button>
                 <ul class="liste" id="menu">
                     <li class="lien">
                         <a id="crypto" href="">Cryptomonnaie <i class="fa-solid fa-angle-down" id="bas"></i></a>
@@ -83,7 +87,7 @@
                 <h2>La Blockchain et le Bitcoin</h2>
                 <div class="bloc_btc">
                     <div class="image_btc">
-                        <img id="btc" src="btc.jpg" alt="">
+                        <img id="btc" src="./image/btc.jpg" alt="">
                     </div>
                     <div class="text_btc">
                         <p>
@@ -126,7 +130,7 @@
                             de toute blockchain.</p>
                         <div class="bloc_bnb">
                             <div class="image_bnb">
-                                <img id="bnb" src="bnb.jpg" alt="">
+                                <img id="bnb" src="./image/bnb.jpg" alt="">
                             </div>
                             <div class="text_bnb">
                                 <p>
@@ -195,38 +199,72 @@
                             Grimes (également compagne d’Elon Musk, tous deux aussi fantasques l’un que l’autre) a mis en vente en ligne certaines de ses productions numériques qui ont atteint les 6 millions.
                         </p>
                         <h3>Top 10 des NFT les plus marquantes</h3>
-                        <ol>
-                            <li>
-                                <a href="">Everydays: The First 5000 Days vendue à 69,9 millions de dollars, un record</a>
-                            </li>
-                            <li>
-                                <a href="">CrytoPunk #7804 - Un punk pixellisé à 7,6 millions de dollars</a>
-                            </li>
-                            <li>
-                                <a href="">Jack Dorsey - Le premier tweet en NFT - 2,9 millions de dollars</a>
-                            </li>
-                            <li>
-                                <a href="">3Lau - Première vente d'album sous forme de NFT - total 11,7 millions de dollars</a>
-                            </li>
-                            <li>
-                                <a href="">Stay Free, l'autoportrait d'Edward Snowden - 5 millions de dollars</a>
-                            </li>
-                            <li>
-                                <a href="">NBA Top Shot - 500 millions de dollars au total</a>
-                            </li>
-                            <li>
-                                <a href="">Grimes -5,8 millions de dollars pour la collection numérique</a>
-                            </li>
-                            <li>
-                                <a href="">Nyat Cat - Un mème de chaton volant - 470 000 dollars</a>
-                            </li>
-                            <li>
-                                <a href="">Oleksandra Oliynykova - Le bras d'une tenniswoman - 6 000 dollars</a>
-                            </li>
-                            <li>
-                                <a href=""> Un mariage sur la blockchain</a>
-                            </li>
-                        </ol>
+                        <div class="nft_marquant">
+                            <ol>
+                                <li>
+                                    <a href="">Everydays: The First 5000 Days vendue à 69,9 millions de dollars, un record</a>
+                                </li>
+                                <li>
+                                    <a href="">CrytoPunk #7804 - Un punk pixellisé à 7,6 millions de dollars</a>
+                                </li>
+                                <li>
+                                    <a href="">Jack Dorsey - Le premier tweet en NFT - 2,9 millions de dollars</a>
+                                </li>
+                                <li>
+                                    <a href="">3Lau - Première vente d'album sous forme de NFT - total 11,7 millions de dollars</a>
+                                </li>
+                                <li>
+                                    <a href="">Stay Free, l'autoportrait d'Edward Snowden - 5 millions de dollars</a>
+                                </li>
+                                <li>
+                                    <a href="">NBA Top Shot - 500 millions de dollars au total</a>
+                                </li>
+                                <li>
+                                    <a href="">Grimes -5,8 millions de dollars pour la collection numérique</a>
+                                </li>
+                                <li>
+                                    <a href="">Nyat Cat - Un mème de chaton volant - 470 000 dollars</a>
+                                </li>
+                                <li>
+                                    <a href="">Oleksandra Oliynykova - Le bras d'une tenniswoman - 6 000 dollars</a>
+                                </li>
+                                <li>
+                                    <a href=""> Un mariage sur la blockchain</a>
+                                </li>
+                            </ol>
+                            <div>
+                                <div>
+                                    <img src="./image/Everydays.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="./image/cryptopunk.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="./image/jackdorsey.png" alt="">
+                                </div>
+                                <div>
+                                    <img src="/image/3lau.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="/image/edwar.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="/image/nba.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="/image/grimes.jpeg" alt="">
+                                </div>
+                                <div>
+                                    <img src="/image/nyat.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="/image/aleksandra.jpg" alt="">
+                                </div>
+                                <div>
+                                    <img src="/image/mariage.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                         <h3><u>Le top collection NFT de tous les temps</u> </h3>
                         <div class="table_top">
                             <table>

@@ -36,11 +36,92 @@ header .header_container {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  /* anime one
+            */
 }
 
-header .header_container .bars {
+header .header_container .box {
   display: none;
-  font-size: 2rem;
+  width: 50px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+  background-color: #110D26;
+  top: 5px;
+}
+
+header .header_container .container-lignes {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+header .header_container .ligne {
+  position: absolute;
+  border-radius: 10px;
+  width: 100%;
+  height: 3px;
+  background: white;
+}
+
+header .header_container .box .ligne:nth-child(1) {
+  top: 0px;
+}
+
+header .header_container .box .ligne:nth-child(2) {
+  top: 15px;
+}
+
+header .header_container .box .ligne:nth-child(3) {
+  top: 30px;
+}
+
+header .header_container .box .ligne:nth-child(1),
+header .header_container .ligne:nth-child(3) {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: top 0.4s 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: top 0.4s 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, top 0.4s 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, top 0.4s 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+header .header_container .box .ligne:nth-child(2) {
+  -webkit-transition: opacity 0.4s 0.4s ease-in-out;
+  transition: opacity 0.4s 0.4s ease-in-out;
+}
+
+header .header_container .box.active .ligne:nth-child(1) {
+  top: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 0.4s ease-in-out, -webkit-transform 0.4s 0.4s ease-in-out;
+  transition: top 0.4s ease-in-out, -webkit-transform 0.4s 0.4s ease-in-out;
+  transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out;
+  transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out, -webkit-transform 0.4s 0.4s ease-in-out;
+}
+
+header .header_container .box.active .ligne:nth-child(2) {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+header .header_container .box.active .ligne:nth-child(3) {
+  top: 15px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: top 0.4s ease-in-out, -webkit-transform 0.4s 0.4s ease-in-out;
+  transition: top 0.4s ease-in-out, -webkit-transform 0.4s 0.4s ease-in-out;
+  transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out;
+  transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out, -webkit-transform 0.4s 0.4s ease-in-out;
 }
 
 header .header_container img {
@@ -192,6 +273,12 @@ main .main_container {
   height: 100%;
 }
 
+main .main_container h2 {
+  color: white;
+  padding-left: 1rem;
+  width: auto;
+}
+
 main .main_container .titre {
   border: 1px solid white;
   height: 100px;
@@ -288,25 +375,59 @@ main .main_container .bloc_nft .text_nft .table_top table td {
   padding: 8px;
 }
 
-main .main_container .bloc_nft .text_nft ol {
-  border: 1px solid white;
+main .main_container .bloc_nft .text_nft .table_top table tr a,
+main .main_container .bloc_nft .text_nft .table_top table th a,
+main .main_container .bloc_nft .text_nft .table_top table td a {
+  color: #42C2FF;
+  text-decoration: none;
+}
+
+main .main_container .bloc_nft .text_nft .table_top table tr a:hover,
+main .main_container .bloc_nft .text_nft .table_top table th a:hover,
+main .main_container .bloc_nft .text_nft .table_top table td a:hover {
+  text-decoration: underline;
+}
+
+main .main_container .bloc_nft .text_nft .nft_marquant {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem;
+  height: auto;
 }
 
-main .main_container .bloc_nft .text_nft ol li a {
+main .main_container .bloc_nft .text_nft .nft_marquant ol {
+  padding-left: 30px;
+}
+
+main .main_container .bloc_nft .text_nft .nft_marquant ol li a {
   text-decoration: none;
   color: white;
-  margin-bottom: 2rem;
+}
+
+main .main_container .bloc_nft .text_nft .nft_marquant ol li {
+  padding: 1rem 0px;
+  border: 1px solid white;
+}
+
+main .main_container .bloc_nft .text_nft .nft_marquant div {
+  border: 1px solid red;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 380px 380px;
+      grid-template-columns: 380px 380px;
+  width: 60%;
+}
+
+main .main_container .bloc_nft .text_nft .nft_marquant div div {
+  border: 1px solid white;
+  width: 50%;
+}
+
+main .main_container .bloc_nft .text_nft .nft_marquant div div img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main .main_container .bloc_metavers .text_metavers {
@@ -416,13 +537,9 @@ footer {
   header .header_container .acces .btn_inscription {
     display: none;
   }
-  header .header_container .bars {
+  header .header_container .box {
     display: block;
     z-index: 1;
-  }
-  header .header_container .bars i {
-    color: white;
-    cursor: pointer;
   }
   header .header_container .logo {
     z-index: 1;
@@ -430,10 +547,6 @@ footer {
   header .header_container .logo img {
     width: 50px;
     height: 50px;
-  }
-  main .main_container h2 {
-    color: white;
-    padding-left: 1rem;
   }
   main .main_container .titre_metavers {
     margin-top: 0.7rem;

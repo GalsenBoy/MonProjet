@@ -8,12 +8,6 @@ crypto.addEventListener('mouseover', function(e) {
         document.getElementById('ul_crypto').style.display = "none";
     })
 })
-
-function mouseover() {
-
-}
-
-
 const nft = document.querySelector("#nft")
 nft.addEventListener('mouseover', function(e) {
     document.getElementById('ul_nft').style.display = "block";
@@ -32,10 +26,8 @@ metavers.addEventListener('mouseover', function(e) {
         document.getElementById('ul_metavers').style.display = "none";
     })
 })
-
-
-
-let ouvrir = document.querySelector('.ouvrir');
-ouvrir.addEventListener('click', function() {
+let boite = document.querySelector('.box');
+boite.addEventListener('click', function(e) {
     body.classList.toggle('open');
+    e.target.classList.toggle('active')
 })
