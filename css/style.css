@@ -333,6 +333,46 @@ main .main_container .bloc_btc .bloc_bnb #bnb {
   padding-top: 1rem;
 }
 
+main .main_container .bloc_btc .bloc_defi {
+  border: 1px solid white;
+  padding-left: 1rem;
+}
+
+main .main_container .bloc_btc .bloc_defi .global_image_minage {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+main .main_container .bloc_btc .bloc_defi .global_image_minage .image_defi {
+  width: calc(204.75px *5);
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 3px 10px #18A284;
+          box-shadow: 0 3px 10px #18A284;
+}
+
+main .main_container .bloc_btc .bloc_defi .global_image_minage .image_defi img {
+  width: 100%;
+}
+
+main .main_container .bloc_btc .bloc_minage .global_image_minage {
+  overflow: hidden;
+}
+
+main .main_container .bloc_btc .bloc_minage .global_image_minage .images_minage {
+  width: 100%;
+  border: 1px solid white;
+}
+
+main .main_container .bloc_btc .bloc_minage .global_image_minage .images_minage img {
+  width: 1023.75px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  float: left;
+}
+
 main .main_container h2 {
   border: 1px solid white;
 }
@@ -421,8 +461,8 @@ main .main_container .bloc_nft .text_nft .nft_marquant .gallerie {
   display: grid;
   -ms-grid-columns: (1fr)[10];
       grid-template-columns: repeat(10, 1fr);
-  -ms-grid-rows: (1fr)[auto-fill];
-      grid-template-rows: repeat(auto-fill, 1fr);
+  -ms-grid-rows: (1fr)[auto];
+      grid-template-rows: repeat(auto, 1fr);
   grid-gap: 5px;
   padding: 5px;
   width: 60%;
@@ -501,9 +541,30 @@ main .main_container .bloc_nft .text_nft .nft_marquant .gallerie .img10 {
   grid-column: 7/11;
 }
 
-main .main_container .bloc_nft .text_nft .nft_marquant .gallerie a {
-  cursor: default;
-  pointer-events: none;
+main .main_container .bloc_meme .image_meme {
+  border: 1px solid white;
+}
+
+main .main_container .bloc_meme .image_meme .image_doge {
+  width: 25%;
+  float: left;
+  border-radius: 50%;
+  shape-outside: circle();
+}
+
+main .main_container .bloc_meme .image_meme .image_doge img {
+  width: 100%;
+}
+
+main .main_container .bloc_meme .image_meme .image_shiba {
+  width: 25%;
+  float: right;
+  border-radius: 50%;
+  shape-outside: circle();
+}
+
+main .main_container .bloc_meme .image_meme .image_shiba img {
+  width: 100%;
 }
 
 main .main_container .bloc_metavers .text_metavers {
@@ -632,13 +693,6 @@ footer {
             transform: translateX(0);
     -webkit-transition: 1.2s;
     transition: 1.2s;
-  }
-}
-
-@media screen and (max-width: 666px) {
-  .gallerie a {
-    cursor: pointer;
-    pointer-events: initial;
   }
 }
 /*# sourceMappingURL=style.css.map */

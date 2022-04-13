@@ -257,6 +257,39 @@
                         padding-top: 1rem;
                     }
                 }
+                .bloc_defi {
+                    border: 1px solid white;
+                    padding-left: 1rem;
+                    .global_image_minage {
+                        overflow: hidden;
+                        width: 100%;
+                        height: auto;
+                        .image_defi {
+                            width: calc(204.75px *5);
+                            height: auto;
+                            box-sizing: border-box;
+                            box-shadow: 0 3px 10px #18A284;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                .bloc_minage {
+                    .global_image_minage {
+                        overflow: hidden;
+                        //margin:150px auto;
+                        .images_minage {
+                            width: 100%;
+                            border: 1px solid white;
+                            img {
+                                width: 1023.75px;
+                                object-fit: cover;
+                                float: left;
+                            }
+                        }
+                    }
+                }
             }
             h2 {
                 border: 1px solid white;
@@ -321,7 +354,7 @@
                         .gallerie {
                             display: grid;
                             grid-template-columns: repeat(10, 1fr);
-                            grid-template-rows: repeat(auto-fill, 1fr);
+                            grid-template-rows: repeat(auto, 1fr);
                             //border: 1px solid white;
                             grid-gap: 5px;
                             padding: 5px;
@@ -367,10 +400,29 @@
                             .img10 {
                                 grid-column: 7/11;
                             }
-                            a {
-                                cursor: default;
-                                pointer-events: none;
-                            }
+                        }
+                    }
+                }
+            }
+            .bloc_meme {
+                .image_meme {
+                    border: 1px solid white;
+                    .image_doge {
+                        width: 25%;
+                        float: left;
+                        border-radius: 50%;
+                        shape-outside: circle();
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .image_shiba {
+                        width: 25%;
+                        float: right;
+                        border-radius: 50%;
+                        shape-outside: circle();
+                        img {
+                            width: 100%;
                         }
                     }
                 }
@@ -482,11 +534,4 @@
         }
     }
     
-    @media screen and (max-width:666px) {
-        .gallerie {
-            a {
-                cursor: pointer;
-                pointer-events: initial;
-            }
-        }
-    }
+    @media screen and (max-width:666px) {}
