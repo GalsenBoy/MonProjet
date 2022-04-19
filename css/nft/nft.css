@@ -33,6 +33,13 @@ main .nft_container .bloc_nft .partieUne .image_nft img {
   -webkit-box-shadow: 0px 3px 10px #FFFB88;
           box-shadow: 0px 3px 10px #FFFB88;
   width: 100%;
+  border-radius: 10px;
+}
+
+main .nft_container .bloc_nft .partieUne .image_nft:hover,
+main .nft_container .bloc_nft .partieUne .definition:hover {
+  -webkit-box-shadow: 0 5px 8px 0 #FFFB88;
+          box-shadow: 0 5px 8px 0 #FFFB88;
 }
 
 main .nft_container .bloc_nft .partieUne .definition {
@@ -41,7 +48,7 @@ main .nft_container .bloc_nft .partieUne .definition {
 
 main .nft_container .bloc_nft .partieUne .definition p {
   font-size: xx-large;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 main .nft_container .bloc_nft .texte_nft {

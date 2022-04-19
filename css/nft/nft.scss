@@ -25,13 +25,18 @@
                         img {
                             box-shadow: 0px 3px 10px #FFFB88;
                             width: 100%;
+                            border-radius: 10px;
                         }
+                    }
+                    .image_nft:hover,
+                    .definition:hover {
+                        box-shadow: 0 5px 8px 0 #FFFB88;
                     }
                     .definition {
                         width: 45%;
                         p {
                             font-size: xx-large;
-                            padding: 1rem;
+                            padding: 1.5rem;
                         }
                     }
                 }

@@ -37,13 +37,19 @@ main .metaver_container .bloc_metavers .partieUne .image_metavers img {
   border-radius: 10px;
 }
 
+main .metaver_container .bloc_metavers .partieUne .image_metavers:hover,
+main .metaver_container .bloc_metavers .partieUne .definition:hover {
+  -webkit-box-shadow: 0 5px 13px 0 #E0E022;
+          box-shadow: 0 5px 13px 0 #E0E022;
+}
+
 main .metaver_container .bloc_metavers .partieUne .definition {
   width: 45%;
 }
 
 main .metaver_container .bloc_metavers .partieUne .definition p {
   font-size: xx-large;
-  padding: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 main .metaver_container .bloc_metavers .texte_metavers {
@@ -73,6 +79,14 @@ main .metaver_container .bloc_metavers .meta .image_meta {
 main .metaver_container .bloc_metavers .meta .image_meta img {
   width: 100%;
   float: left;
+  -webkit-box-shadow: 0px 3px 10px #330061;
+          box-shadow: 0px 3px 10px #330061;
+}
+
+main .metaver_container .bloc_metavers .meta .image_meta:hover,
+main .metaver_container .bloc_metavers .meta .texte_meta:hover {
+  -webkit-box-shadow: 0 8px 23px 0 #330061;
+          box-shadow: 0 8px 23px 0 #330061;
 }
 
 main .metaver_container .bloc_metavers .meta .texte_meta {

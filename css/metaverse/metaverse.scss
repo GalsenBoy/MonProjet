@@ -29,11 +29,15 @@ main {
                         border-radius: 10px;
                     }
                 }
+                .image_metavers:hover,
+                .definition:hover {
+                    box-shadow: 0 5px 13px 0 #E0E022;
+                }
                 .definition {
                     width: 45%;
                     p {
                         font-size: xx-large;
-                        padding: 0.5rem;
+                        padding-left: 0.5rem;
                     }
                 }
             }
@@ -51,7 +55,12 @@ main {
                     img {
                         width: 100%;
                         float: left;
+                        box-shadow: 0px 3px 10px #330061;
                     }
+                }
+                .image_meta:hover,
+                .texte_meta:hover {
+                    box-shadow: 0 8px 23px 0 #330061;
                 }
                 .texte_meta {
                     width: 45%;

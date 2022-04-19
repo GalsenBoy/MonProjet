@@ -39,6 +39,13 @@ main .crypto_container .blockchain .partieUne .image_btc img {
      object-fit: cover;
   -webkit-box-shadow: 0px 3px 10px #C29224;
           box-shadow: 0px 3px 10px #C29224;
+  border-radius: 10px;
+}
+
+main .crypto_container .blockchain .partieUne .image_btc:hover,
+main .crypto_container .blockchain .partieUne .definition:hover {
+  -webkit-box-shadow: 0px 5px 10px #C29224;
+          box-shadow: 0px 5px 10px #C29224;
 }
 
 main .crypto_container .blockchain .partieUne .definition {
@@ -138,14 +145,25 @@ main .crypto_container .bloc_defi .partieTrois {
           align-items: center;
 }
 
-main .crypto_container .bloc_defi .partieTrois .image_defi, main .crypto_container .bloc_defi .partieTrois .definitionTrois {
+main .crypto_container .bloc_defi .partieTrois .image_defi {
   width: 45%;
 }
 
-main .crypto_container .bloc_defi .partieTrois .image_defi img, main .crypto_container .bloc_defi .partieTrois .definitionTrois img {
+main .crypto_container .bloc_defi .partieTrois .image_defi img {
   width: 100%;
   -webkit-box-shadow: 0 3px 10px #18A284;
           box-shadow: 0 3px 10px #18A284;
+  border-radius: 10px;
+}
+
+main .crypto_container .bloc_defi .partieTrois .image_defi:hover,
+main .crypto_container .bloc_defi .partieTrois .definitionTrois:hover {
+  -webkit-box-shadow: 0px 5px 12px #18A284;
+          box-shadow: 0px 5px 12px #18A284;
+}
+
+main .crypto_container .bloc_defi .partieTrois .definitionTrois {
+  width: 45%;
 }
 
 main .crypto_container .bloc_defi .partieTrois .definitionTrois p {
@@ -188,6 +206,9 @@ main .crypto_container .bloc_meme .partieQuatre .image_shiba {
 main .crypto_container .bloc_meme .partieQuatre .image_shiba img {
   width: 100%;
   shape-outside: circle();
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main .crypto_container .bloc_meme .partieQuatre .texte_meme {
@@ -218,6 +239,17 @@ main .crypto_container .bloc_minage .partieCinq .image_minage {
 
 main .crypto_container .bloc_minage .partieCinq .image_minage img {
   width: 100%;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 3px 10px #5F7BD2;
+          box-shadow: 0px 3px 10px #5F7BD2;
+}
+
+main .crypto_container .bloc_minage .partieCinq .image_minage:hover,
+main .crypto_container .bloc_minage .partieCinq .definitionCinq:hover {
+  -webkit-box-shadow: 0px 3px 10px #5F7BD2;
+          box-shadow: 0px 3px 10px #5F7BD2;
 }
 
 main .crypto_container .bloc_minage .partieCinq .definitionCinq {

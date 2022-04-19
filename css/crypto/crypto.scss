@@ -35,7 +35,12 @@ main {
                         width: 100%;
                         object-fit: cover;
                         box-shadow: 0px 3px 10px #C29224;
+                        border-radius: 10px;
                     }
+                }
+                .image_btc:hover,
+                .definition:hover {
+                    box-shadow: 0px 5px 10px #C29224;
                 }
                 .definition {
                     width: 45%;
@@ -112,10 +117,15 @@ main {
                     img {
                         width: 100%;
                         box-shadow: 0 3px 10px #18A284;
+                        border-radius: 10px;
                     }
                 }
+                .image_defi:hover,
+                .definitionTrois:hover {
+                    box-shadow: 0px 5px 12px #18A284;
+                }
                 .definitionTrois {
-                    @extend .image_defi;
+                    width: 45%;
                     p {
                         font-size: x-large;
                     }
@@ -154,6 +164,8 @@ main {
                     img {
                         width: 100%;
                         shape-outside: circle();
+                        border-radius: 10px;
+                        object-fit: cover;
                     }
                 }
                 .texte_meme {
@@ -176,7 +188,14 @@ main {
                     width: 45%;
                     img {
                         width: 100%;
+                        border-radius: 10px;
+                        object-fit: cover;
+                        box-shadow: 0px 3px 10px #5F7BD2;
                     }
+                }
+                .image_minage:hover,
+                .definitionCinq:hover {
+                    box-shadow: 0px 3px 10px #5F7BD2;
                 }
                 .definitionCinq {
                     width: 45%;
