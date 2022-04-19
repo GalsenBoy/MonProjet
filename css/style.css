@@ -19,6 +19,7 @@ body .container {
 }
 
 header {
+  background-color: #202020;
   position: fixed;
   width: 100%;
 }
@@ -126,7 +127,9 @@ header .header_container .logo {
 }
 
 header .header_container .logo img {
-  width: 100px;
+  width: 100%;
+  height: 100%;
+  font-size: 5rem;
   height: 100%;
   padding-top: 10px;
   -o-object-fit: cover;
@@ -136,6 +139,11 @@ header .header_container .logo img {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   cursor: pointer;
+}
+
+header .header_container .logo title {
+  color: white;
+  font-size: 20px;
 }
 
 header .header_container ul {
@@ -295,69 +303,7 @@ main .main_container {
                     font-weight: bold;
                 }
             }
-            .bloc_btc {
-                padding-top: 2rem;
-                color: $color;
-                #btc {
-                    width: 50%;
-                    height: 50%;
-                    object-fit: cover;
-                    float: left;
-                    padding: 0 6px 0 16px;
-                    padding-top: 1rem;
-                }
-                .text_btc {
-                    ul {
-                        display: inline-block;
-                        padding-left: 2rem;
-                    }
-                    p,
-                    h3 {
-                        padding: 1rem;
-                    }
-                }
-                .bloc_bnb {
-                    //border: 1px solid white;
-                    #bnb {
-                        width: 25%;
-                        height: 25%;
-                        float: right;
-                        object-fit: cover;
-                        border-radius: 10%;
-                        padding-top: 1rem;
-                    }
-                }
-                .bloc_defi {
-                    border: 1px solid white;
-                    padding-left: 1rem;
-                    .image_defi {
-                        width: calc(204.75px *5);
-                        height: auto;
-                        box-sizing: border-box;
-                        box-shadow: 0 3px 10px #18A284;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                }
-                .bloc_minage {
-                    border: 1px solid white;
-                    .slider {
-                        border: 1px solid salmon;
-                        width: 500px;
-                        overflow: hidden;
-                        .slides {
-                            border: 1px solid aqua;
-                            width: calc(500px * 5);
-                            //animation: glisse 10s infinite;
-                            .mine {
-                                float: left;
-                                width: 500px;
-                            }
-                        }
-                    }
-                }
-            }
+            
             h2 {
                 border: 1px solid white;
             }
@@ -509,7 +455,7 @@ main .main_container {
 main .main_container .principale {
   padding: 5rem 0;
   margin-bottom: 5rem;
-  background-color: black;
+  background-color: #1b1a1a;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,7 +465,7 @@ main .main_container .principale {
 }
 
 main .main_container .principale .image_blockchain {
-  width: 50%;
+  width: 45%;
 }
 
 main .main_container .principale .image_blockchain img {
@@ -538,7 +484,7 @@ main .main_container .principale .titre {
 }
 
 main .main_container .principale .titre h1 {
-  font-size: 48px;
+  font-size: 50px;
 }
 
 main .main_container .principale .titre ul {
@@ -560,13 +506,14 @@ main .main_container .principale .titre ul {
 main .main_container .principale .titre ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  pointer-events: none;
 }
 
 main .main_container .cryptommonnaie {
   padding: 5rem 0;
   margin: 5rem 0;
-  background-color: black;
+  background-color: #1b1a1a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -691,6 +638,7 @@ main .main_container .meme_coin .radius {
   border-radius: 17px;
   -webkit-box-shadow: 0 15px 50px black;
           box-shadow: 0 15px 50px black;
+  opacity: 0;
 }
 
 main .main_container .meme_coin .radius .image_doge {
@@ -716,7 +664,7 @@ main .main_container .meme_coin .radius:hover {
 }
 
 main .main_container .meta {
-  background-color: black;
+  background-color: #1b1a1a;
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -742,6 +690,12 @@ main .main_container .meta .texte_meta h3 {
 
 footer {
   background-color: red;
+}
+
+.radius.show {
+  opacity: 1;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
 }
 
 @-webkit-keyframes opacity {

@@ -1,0 +1,206 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+    height: 100vh;
+}
+
+main {
+    .crypto_container {
+        font-family: 'Montserrat', Arial;
+        height: 100%;
+        background-color: rgb(27, 26, 26);
+        color: rgb(253, 244, 244);
+        //border: 1px solid red;
+        width: 100%;
+        .blockchain {
+            //border: 1px solid white;
+            .partieUne {
+                @include flex();
+                //border: 1px solid salmon;
+                .image_btc {
+                    //border: 1px solid aqua;
+                    width: 45%;
+                    img {
+                        width: 100%;
+                        object-fit: cover;
+                        box-shadow: 0px 3px 10px #C29224;
+                    }
+                }
+                .definition {
+                    width: 45%;
+                    p,
+                    ul {
+                        font-size: x-large;
+                        padding: 0.7rem;
+                    }
+                    ul {
+                        padding-left: 2.5rem;
+                    }
+                    h3 {
+                        font-size: xx-large;
+                        padding: 1rem;
+                    }
+                }
+            }
+            .text_btc {
+                //border: 1px solid red;
+                padding: 0 15%;
+                p,
+                h3,
+                ul {
+                    padding: 1rem;
+                }
+                p,
+                ul {
+                    font-size: larger;
+                }
+                h3 {
+                    font-size: x-large;
+                    text-align: center;
+                }
+            }
+        }
+        .bloc_bnb {
+            .partieDeux {
+                @include flex();
+                .image_bnb {
+                    width: 45%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .definitionDeux {
+                    width: 45%;
+                    p {
+                        font-size: x-large;
+                    }
+                }
+            }
+            .text_bnb {
+                padding: 0 15%;
+                p,
+                h3,
+                ul {
+                    padding: 0.8rem;
+                }
+                p,
+                ul {
+                    font-size: larger;
+                }
+                h3 {
+                    font-size: x-large;
+                    text-align: center;
+                }
+            }
+        }
+        .bloc_defi {
+            .partieTrois {
+                @include flex();
+                .image_defi {
+                    width: 45%;
+                    img {
+                        width: 100%;
+                        box-shadow: 0 3px 10px #18A284;
+                    }
+                }
+                .definitionTrois {
+                    @extend .image_defi;
+                    p {
+                        font-size: x-large;
+                    }
+                }
+            }
+            .texte_defi {
+                padding: 0 15%;
+                p,
+                h3,
+                ul {
+                    padding: 1rem;
+                }
+                p,
+                ul {
+                    font-size: larger;
+                }
+                h3 {
+                    font-size: x-large;
+                    text-align: center;
+                }
+                ul {
+                    padding-left: 2rem;
+                }
+            }
+        }
+        .bloc_meme {
+            //border: 1px solid white;
+            .partieQuatre {
+                .image_shiba {
+                    padding: 1rem;
+                    width: 25%;
+                    float: left;
+                    padding: 1rem;
+                    border-radius: 50%;
+                    shape-outside: circle();
+                    img {
+                        width: 100%;
+                        shape-outside: circle();
+                    }
+                }
+                .texte_meme {
+                    //border: 1px solid white;
+                    padding: 1rem;
+                    p {
+                        font-size: larger;
+                        padding: 0.5rem;
+                    }
+                }
+            }
+        }
+        .bloc_minage {
+            .partieCinq {
+                @include flex();
+                //border: 1px solid white;
+                width: 100%;
+                justify-content: space-around;
+                .image_minage {
+                    width: 45%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .definitionCinq {
+                    width: 45%;
+                    p {
+                        font-size: xx-large;
+                    }
+                }
+            }
+            .texte_minage {
+                padding: 0 15%;
+                p,
+                h3,
+                h4 {
+                    padding: 1rem;
+                }
+                p,
+                h4 {
+                    font-size: larger;
+                }
+                h3 {
+                    font-size: x-large;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

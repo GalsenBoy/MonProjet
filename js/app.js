@@ -31,3 +31,43 @@ boite.addEventListener('click', function(e) {
     body.classList.toggle('open');
     e.target.classList.toggle('active')
 })
+
+//On déclare notre div
+const radius = document.querySelector('.radius');
+const card = document.querySelector('.card')
+    //Nos paramètres d'options
+let options = {
+        root: null,
+        threshold: 0.5
+    }
+    //entries c'est les éléments qu'on observe
+function handleIntersect(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.toggle('show')
+            entry.target.style.opacity = 1;
+        }
+    })
+    console.log(entries);
+}
+//on crée crée notre constructeur 
+const observer = new IntersectionObserver(handleIntersect, options);
+//On observe notre div radius
+observer.observe(radius);
+
+
+
+
+
+
+/*
+const meme = document.querySelector('meme_coin')
+window.addEventListener('scroll', function() {
+    const { scrollTop, clientHeight } = document.documentElement;
+
+    const milieu = meme.getBoundingClientRect().top;
+    if (scrollTop > (scrollTop + milieu).toFixed() - clientHeight * 0.50) {
+        meme.classList.add('active_scroll');
+    }
+})
+*/
