@@ -5,7 +5,7 @@
     }
     
     $theme:#110D26;
-    $color:white;
+    $color:rgb(253, 244, 244);
     //$lie:#1F1B34;
     $billy:(#1F1B34, #3d317a);
     @mixin flex {
@@ -38,7 +38,8 @@
             height: 100%;
             display: grid;
             grid-template-rows: auto 1fr auto;
-            position: relative;
+            //position: relative;
+            /*
             .chargement {
                 position: absolute;
                 width: 100%;
@@ -46,9 +47,10 @@
                 background-color: rgb(226, 216, 216);
                 @include flex();
             }
+            */
         }
     }
-    
+    /*
     .lettre {
         color: white;
         font-size: 80px;
@@ -105,6 +107,7 @@
         opacity: 0;
         transition: opacity 0.4s ease-out;
     }
+    */
     
     header {
         background-color: rgb(32, 32, 32);
@@ -118,75 +121,70 @@
             align-items: center;
             flex-wrap: wrap;
             //border: 1px solid white;
-            .box {
-                display: none;
-                width: 50px;
-                height: 40px;
+            .hamburger {
+                background-color: transparent;
+                width: 75px;
+                height: 50px;
                 border: none;
                 cursor: pointer;
                 border-radius: 5px;
                 position: relative;
-                //background-color: #110D26;
-                top: 5px;
+                display: none;
+                .container-lignes {
+                    width: 50px;
+                    height: 40px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    pointer-events: none;
+                    .ligne {
+                        position: absolute;
+                        border-radius: 10px;
+                        width: 100%;
+                        height: 5px;
+                        background: $color;
+                    }
+                    .ligne:nth-child(1) {
+                        top: 0px;
+                    }
+                    .ligne:nth-child(2) {
+                        top: 20px;
+                    }
+                    .ligne:nth-child(3) {
+                        top: 40px;
+                    }
+                    .ligne:nth-child(1),
+                    .ligne:nth-child(3) {
+                        transform: rotate(0deg);
+                        transition: transform 0.4s ease-in-out, top 0.4s 0.4s ease-in-out;
+                    }
+                    .ligne:nth-child(2) {
+                        transition: opacity 0.4s 0.4s ease-in-out;
+                    }
+                }
             }
-            .container-lignes {
-                width: 100%;
-                height: 50px;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                pointer-events: none;
-            }
-            .ligne {
-                position: absolute;
-                border-radius: 10px;
-                width: 100%;
-                height: 3px;
-                background: $color;
-            }
-            .box .ligne:nth-child(1) {
-                top: 0px;
-            }
-            .box .ligne:nth-child(2) {
-                top: 15px;
-            }
-            .box .ligne:nth-child(3) {
-                top: 30px;
-            }
-            /* anime one
-            */
-            .box .ligne:nth-child(1),
-            .ligne:nth-child(3) {
-                transform: rotate(0deg);
-                transition: transform 0.4s ease-in-out, top 0.4s 0.4s ease-in-out;
-            }
-            .box .ligne:nth-child(2) {
-                transition: opacity 0.4s 0.4s ease-in-out;
-            }
-            .box.active .ligne:nth-child(1) {
-                top: 15px;
+            .hamburger.active .ligne:nth-child(1) {
+                top: 18px;
                 transform: rotate(45deg);
                 transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out;
             }
-            .box.active .ligne:nth-child(2) {
+            .hamburger.active .ligne:nth-child(2) {
                 opacity: 0;
                 transition: opacity 0.4s ease-in-out;
             }
-            .box.active .ligne:nth-child(3) {
-                top: 15px;
+            .hamburger.active .ligne:nth-child(3) {
+                top: 18px;
                 transform: rotate(-45deg);
                 transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out;
             }
             .logo {
-                height: 100px;
                 //border: 1px salmon dotted;
+                width: 80px;
+                height: 80px;
                 img {
                     width: 100%;
                     height: 100%;
-                    font-size: 5rem;
-                    height: 100%;
-                    padding-top: 10px;
                     object-fit: cover;
                     @include animation();
                     cursor: pointer;
@@ -393,7 +391,7 @@
                 margin: 5rem 0;
                 //border: 1px solid white;
                 padding: 5rem 0;
-                color: white;
+                color: $color;
                 display: flex;
                 justify-content: space-around;
                 background-color: rgb(27, 26, 26);
@@ -461,7 +459,7 @@
                     width: 50%;
                     display: flex;
                     align-items: center;
-                    h3 {
+                    p {
                         font-size: 3rem;
                         font-family: Helvetica, Arial, sans-serif;
                     }
@@ -500,7 +498,7 @@
         }
         ;
     }
-    
+    /*
     @keyframes chargement {
         0% {
             color: #fff900;
@@ -515,6 +513,7 @@
             text-shadow: 0 0 7px #fff900;
         }
     }
+    */
     
     @media screen and (max-width:980px) {
         header {
@@ -532,7 +531,8 @@
                     flex-direction: column;
                     justify-content: space-around;
                     transform: translateX(-100%);
-                    background-color: $theme;
+                    background-color: #202020;
+                    transition: 1.2s;
                     .fa-angle-down {
                         display: none;
                     }
@@ -551,23 +551,25 @@
                     top: 66rem;
                     display: flex;
                     justify-content: center;
+                    transform: translateX(-100%);
+                    z-index: 1;
                     .btn_connexion {
                         margin-right: 2rem;
-                        display: none;
-                    }
-                    .btn_inscription {
-                        display: none;
                     }
                 }
-                .box {
+                .hamburger {
                     display: block;
                     z-index: 1;
                 }
                 .logo {
                     z-index: 1;
+                    margin-top: 0.5rem;
+                    height: 92px;
+                    width: 92px;
                     img {
-                        width: 50px;
-                        height: 50px;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
                     }
                 }
             }
@@ -579,10 +581,48 @@
                 }
             }
         }
-        .open .liste {
+        .open .menu,
+        .open .acces {
             transform: translateX(0);
             transition: 1.2s;
         }
     }
     
-    @media screen and (max-width:666px) {}
+    @mixin flexColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @mixin widthColumn {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    
+    @media screen and (max-width:666px) {
+        main {
+            .main_container {
+                .principale {
+                    @include flexColumn();
+                    .image_blockchain,
+                    .titre {
+                        @include widthColumn();
+                    }
+                }
+                .cryptommonnaie {
+                    @include flexColumn();
+                    .image_bitcoin,
+                    .citation {
+                        @include widthColumn();
+                    }
+                }
+                .meta {
+                    @include flexColumn();
+                    .image_meta,
+                    .texte_meta {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }

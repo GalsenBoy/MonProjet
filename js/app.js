@@ -26,7 +26,7 @@ metavers.addEventListener('mouseover', function(e) {
         document.getElementById('ul_metavers').style.display = "none";
     })
 })
-let boite = document.querySelector('.box');
+let boite = document.querySelector('.hamburger');
 boite.addEventListener('click', function(e) {
     body.classList.toggle('open');
     e.target.classList.toggle('active')
@@ -59,9 +59,10 @@ const observer = new IntersectionObserver(handleIntersect, options);
 observer.observe(radius);
 
 
-
+/*
 //Page de chargement
 const chargement = document.querySelector('.chargement');
 window.addEventListener('load', function() {
     chargement.classList.add('chargement-affiche')
 })
+*/

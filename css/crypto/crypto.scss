@@ -25,7 +25,7 @@ main {
         width: 100%;
         .blockchain {
             //border: 1px solid white;
-            .partieUne {
+            .partie_crypto {
                 @include flex();
                 //border: 1px solid salmon;
                 .image_btc {
@@ -39,10 +39,10 @@ main {
                     }
                 }
                 .image_btc:hover,
-                .definition:hover {
+                .definition_blockchain:hover {
                     box-shadow: 0px 5px 10px #C29224;
                 }
-                .definition {
+                .definition_blockchain {
                     width: 45%;
                     p,
                     ul {
@@ -77,7 +77,7 @@ main {
             }
         }
         .bloc_bnb {
-            .partieDeux {
+            .partie_bnb {
                 @include flex();
                 .image_bnb {
                     width: 45%;
@@ -85,7 +85,7 @@ main {
                         width: 100%;
                     }
                 }
-                .definitionDeux {
+                .definition_Binance {
                     width: 45%;
                     p {
                         font-size: x-large;
@@ -110,7 +110,7 @@ main {
             }
         }
         .bloc_defi {
-            .partieTrois {
+            .partie_defi {
                 @include flex();
                 .image_defi {
                     width: 45%;
@@ -121,10 +121,10 @@ main {
                     }
                 }
                 .image_defi:hover,
-                .definitionTrois:hover {
+                .definition_defi:hover {
                     box-shadow: 0px 5px 12px #18A284;
                 }
-                .definitionTrois {
+                .definition_defi {
                     width: 45%;
                     p {
                         font-size: x-large;
@@ -153,7 +153,7 @@ main {
         }
         .bloc_meme {
             //border: 1px solid white;
-            .partieQuatre {
+            .partie_meme {
                 .image_shiba {
                     padding: 1rem;
                     width: 25%;
@@ -179,7 +179,7 @@ main {
             }
         }
         .bloc_minage {
-            .partieCinq {
+            .partie_minage {
                 @include flex();
                 //border: 1px solid white;
                 width: 100%;
@@ -194,10 +194,10 @@ main {
                     }
                 }
                 .image_minage:hover,
-                .definitionCinq:hover {
+                .definition_minage:hover {
                     box-shadow: 0px 3px 10px #5F7BD2;
                 }
-                .definitionCinq {
+                .definition_minage {
                     width: 45%;
                     p {
                         font-size: xx-large;
@@ -218,6 +218,87 @@ main {
                 h3 {
                     font-size: x-large;
                     text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin widthColumn {
+    width: 100%;
+    padding: 0 0.5rem;
+}
+
+@media screen and (max-width:666px) {
+    /*
+    .partie_bnb,
+    .partie_crypto,
+    .partie_defi,
+    .partie_meme,
+    .partie_minage {
+        @include flexColumn();
+    }
+    .image_btc,
+    .definition_blockchain,
+    .image_bnb,
+    .definition_Binance {
+        @include widthColumn();
+    }
+    */
+    main {
+        .crypto_container {
+            .blockchain {
+                .partie_crypto {
+                    @include flexColumn();
+                    .image_btc,
+                    .definition_blockchain {
+                        @include widthColumn();
+                    }
+                }
+                .text_btc {
+                    padding: 0 1rem;
+                }
+            }
+            .bloc_bnb {
+                .partie_bnb {
+                    @include flexColumn();
+                    .image_bnb,
+                    .definition_Binance {
+                        @include widthColumn();
+                    }
+                }
+                .text_bnb {
+                    padding: 0 1rem;
+                }
+            }
+            .bloc_defi {
+                .partie_defi {
+                    @include flexColumn();
+                    .image_defi,
+                    .definition_defi {
+                        @include widthColumn();
+                    }
+                }
+                .texte_defi {
+                    padding: 0 1rem;
+                }
+            }
+            .bloc_minage {
+                .partie_minage {
+                    @include flexColumn();
+                    .image_minage,
+                    .definition_minage {
+                        @include widthColumn();
+                    }
+                }
+                .texte_minage {
+                    padding: 0 1rem;
                 }
             }
         }
