@@ -4,15 +4,18 @@
         box-sizing: border-box;
     }
     
-    $neon-1: rgba(255, 255, 255, .5);
     $theme:#110D26;
     $color:rgb(253, 244, 244);
-    //$lie:#1F1B34;
-    $billy:(#1F1B34, #3d317a);
     @mixin flex {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    
+    @mixin shadowImage {
+        border: 6px solid #1d1542;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 3px #E0F7FA;
     }
     
     @mixin color_marge_paragraphe {
@@ -234,7 +237,7 @@
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                        box-shadow: 0px 10px 20px $neon-1;
+                        @include shadowImage();
                     }
                 }
                 .titre {
@@ -273,7 +276,7 @@
                     img {
                         width: 100%;
                         object-fit: cover;
-                        box-shadow: 0px 15px 30px #611211;
+                        @include shadowImage();
                     }
                 }
                 .citation {
@@ -282,7 +285,7 @@
                     blockquote {
                         width: 100%;
                         padding: 25px;
-                        border: 1px solid salmon;
+                        border: 1px solid #1d1542;
                         color: $color;
                         box-sizing: border-box;
                         border-left-width: 10px;
@@ -304,7 +307,7 @@
                     .blockquote--quote::before {
                         content: "\201c";
                         font-size: 100px;
-                        color: salmon;
+                        color: #1d1542;
                         display: block;
                         margin-bottom: -40px;
                         margin-top: -20px;
@@ -318,7 +321,6 @@
                 color: $color;
                 display: flex;
                 justify-content: space-around;
-                //background-color: #0c091c;
                 .card {
                     box-shadow: 0 15px 50px black;
                     transition: 0.3s;
@@ -329,13 +331,13 @@
                     flex-direction: column;
                     align-items: center;
                     .image_shiba {
-                        width: 35%;
+                        width: 45%;
                         img {
                             width: 100%;
                         }
                     }
                     .texte_shiba {
-                        width: 50%;
+                        width: 85%;
                         padding: 2px 16px;
                         text-align: center;
                         font-size: large;

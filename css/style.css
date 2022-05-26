@@ -304,8 +304,10 @@ main .main_container .principale .image_blockchain img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5);
-          box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.5);
+  border: 6px solid #1d1542;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 3px #E0F7FA;
+          box-shadow: 0px 0px 10px 3px #E0F7FA;
 }
 
 main .main_container .principale .titre {
@@ -363,8 +365,10 @@ main .main_container .cryptommonnaie .image_bitcoin img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: 0px 15px 30px #611211;
-          box-shadow: 0px 15px 30px #611211;
+  border: 6px solid #1d1542;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 3px #E0F7FA;
+          box-shadow: 0px 0px 10px 3px #E0F7FA;
 }
 
 main .main_container .cryptommonnaie .citation {
@@ -375,7 +379,7 @@ main .main_container .cryptommonnaie .citation {
 main .main_container .cryptommonnaie .citation blockquote {
   width: 100%;
   padding: 25px;
-  border: 1px solid salmon;
+  border: 1px solid #1d1542;
   color: #fdf4f4;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -402,7 +406,7 @@ main .main_container .cryptommonnaie .citation .blockquote__text--credit {
 main .main_container .cryptommonnaie .citation .blockquote--quote::before {
   content: "\201c";
   font-size: 100px;
-  color: salmon;
+  color: #1d1542;
   display: block;
   margin-bottom: -40px;
   margin-top: -20px;
@@ -441,7 +445,7 @@ main .main_container .meme_coin .card {
 }
 
 main .main_container .meme_coin .card .image_shiba {
-  width: 35%;
+  width: 45%;
 }
 
 main .main_container .meme_coin .card .image_shiba img {
@@ -449,7 +453,7 @@ main .main_container .meme_coin .card .image_shiba img {
 }
 
 main .main_container .meme_coin .card .texte_shiba {
-  width: 50%;
+  width: 85%;
   padding: 2px 16px;
   text-align: center;
   font-size: large;
