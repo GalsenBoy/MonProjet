@@ -1,3 +1,4 @@
+/*
 const body = document.querySelector('body');
 const crypto = document.querySelector('#crypto')
 crypto.addEventListener('mouseover', function(e) {
@@ -26,11 +27,13 @@ metavers.addEventListener('mouseover', function(e) {
         document.getElementById('ul_metavers').style.display = "none";
     })
 })
+*/
 let boite = document.querySelector('.hamburger');
 boite.addEventListener('click', function(e) {
     body.classList.toggle('open');
     e.target.classList.toggle('active')
 })
+
 
 
 
@@ -57,12 +60,3 @@ function handleIntersect(entries) {
 const observer = new IntersectionObserver(handleIntersect, options);
 //On observe notre div radius
 observer.observe(radius);
-
-
-/*
-//Page de chargement
-const chargement = document.querySelector('.chargement');
-window.addEventListener('load', function() {
-    chargement.classList.add('chargement-affiche')
-})
-*/

@@ -177,7 +177,7 @@ header .header_container ul li i:hover {
   opacity: 1;
 }
 
-header .header_container ul li a:hover .sous_menu {
+header .header_container ul li:hover .sous-menu {
   display: block;
 }
 
