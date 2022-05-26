@@ -276,6 +276,7 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #0c091c;
   color: #fdf4f4;
 }
 
@@ -286,7 +287,6 @@ main .main_container {
 main .main_container .principale {
   padding: 5rem 0;
   margin-bottom: 5rem;
-  background-color: #0c091c;
   color: #fdf4f4;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -331,6 +331,7 @@ main .main_container .principale .titre ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-left: 2rem;
+  list-style-type: disc;
 }
 
 main .main_container .principale .titre ul li a {
@@ -343,7 +344,6 @@ main .main_container .principale .titre ul li a {
 main .main_container .cryptommonnaie {
   padding: 5rem 0;
   margin: 5rem 0;
-  background-color: #0c091c;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,7 +418,6 @@ main .main_container .meme_coin {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background-color: #0c091c;
 }
 
 main .main_container .meme_coin .card {
@@ -495,7 +494,6 @@ main .main_container .meme_coin .radius:hover {
 }
 
 main .main_container .meta {
-  background-color: #0c091c;
   margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
