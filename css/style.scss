@@ -4,6 +4,7 @@
         box-sizing: border-box;
     }
     
+    $neon-1: rgba(255, 255, 255, .5);
     $theme:#110D26;
     $color:rgb(253, 244, 244);
     //$lie:#1F1B34;
@@ -31,96 +32,22 @@
     }
     
     body {
-        //background-color: #1c1542;
-        height: 100vh;
-        background-color: rgb(32, 32, 32);
+        background-color: $theme;
         .container {
-            height: 100%;
             display: grid;
             grid-template-rows: auto 1fr auto;
-            //position: relative;
-            /*
-            .chargement {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                background-color: rgb(226, 216, 216);
-                @include flex();
-            }
-            */
         }
     }
-    /*
-    .lettre {
-        color: white;
-        font-size: 80px;
-        letter-spacing: 15px;
-        margin-bottom: 150px;
-        animation: chargement 1.2s linear infinite;
-    }
-    
-    .lettre:nth-child(1) {
-        animation-delay: 0.1s;
-    }
-    
-    .lettre:nth-child(2) {
-        animation-delay: 0.2s;
-    }
-    
-    .lettre:nth-child(3) {
-        animation-delay: 0.3s;
-    }
-    
-    .lettre:nth-child(4) {
-        animation-delay: 0.4s;
-    }
-    
-    .lettre:nth-child(5) {
-        animation-delay: 0.5s;
-    }
-    
-    .lettre:nth-child(6) {
-        animation-delay: 0.6s;
-    }
-    
-    .lettre:nth-child(7) {
-        animation-delay: 0.7s;
-    }
-    
-    .lettre:nth-child(8) {
-        animation-delay: 0.8s;
-    }
-    
-    .lettre:nth-child(9) {
-        animation-delay: 0.9s;
-    }
-    
-    .lettre:nth-child(10) {
-        animation-delay: 1s;
-    }
-    
-    .lettre:nth-child(11) {
-        animation-delay: 1.1s;
-    }
-    
-    .chargement-affiche {
-        opacity: 0;
-        transition: opacity 0.4s ease-out;
-    }
-    */
     
     header {
-        background-color: rgb(32, 32, 32);
+        background-color: $theme;
         position: fixed;
+        z-index: 2;
         width: 100%;
         .header_container {
-            //margin-top: 5px;
             display: flex;
-            //position: relative;
-            justify-content: space-around;
             align-items: center;
             flex-wrap: wrap;
-            //border: 1px solid white;
             .hamburger {
                 background-color: transparent;
                 width: 75px;
@@ -292,14 +219,11 @@
         justify-content: center;
         color: $color;
         .main_container {
-            //width: 100%;
             height: 100%;
-            //border: 1px white solid;
             .principale {
-                //border: 1px solid white;
                 padding: 5rem 0;
                 margin-bottom: 5rem;
-                background-color: rgb(27, 26, 26);
+                background-color: #0c091c;
                 color: $color;
                 display: flex;
                 justify-content: space-around;
@@ -309,8 +233,7 @@
                         width: 100%;
                         height: 100%;
                         object-fit: cover;
-                        object-fit: cover;
-                        box-shadow: 0px 15px 30px #28303E;
+                        box-shadow: 0px 10px 20px $neon-1;
                     }
                 }
                 .titre {
@@ -336,10 +259,9 @@
                 }
             }
             .cryptommonnaie {
-                //border: 1px solid white;
                 padding: 5rem 0;
                 margin: 5rem 0;
-                background-color: rgb(27, 26, 26);
+                background-color: #0c091c;
                 display: flex;
                 margin-top: 3rem;
                 justify-content: space-around;
@@ -389,12 +311,12 @@
             }
             .meme_coin {
                 margin: 5rem 0;
-                //border: 1px solid white;
                 padding: 5rem 0;
+                z-index: -100;
                 color: $color;
                 display: flex;
                 justify-content: space-around;
-                background-color: rgb(27, 26, 26);
+                background-color: #0c091c;
                 .card {
                     box-shadow: 0 15px 50px black;
                     transition: 0.3s;
@@ -412,7 +334,6 @@
                     }
                     .texte_shiba {
                         width: 50%;
-                        //background-color: rgb(165, 158, 158);
                         padding: 2px 16px;
                         text-align: center;
                         font-size: large;
@@ -448,14 +369,11 @@
                 }
             }
             .meta {
-                //border: 1px solid white;
-                background-color: rgb(27, 26, 26);
+                background-color: #0c091c;
                 margin-top: 1rem;
-                //border: 1px solid white;
                 display: flex;
                 justify-content: space-around;
                 .texte_meta {
-                    //border: 1px solid white;
                     width: 50%;
                     display: flex;
                     align-items: center;
@@ -498,22 +416,6 @@
         }
         ;
     }
-    /*
-    @keyframes chargement {
-        0% {
-            color: #fff900;
-            text-shadow: 0 0 7px #fff900;
-        }
-        90% {
-            color: white;
-            text-shadow: none;
-        }
-        100% {
-            color: #fff900;
-            text-shadow: 0 0 7px #fff900;
-        }
-    }
-    */
     
     @media screen and (max-width:980px) {
         header {
@@ -531,8 +433,7 @@
                     flex-direction: column;
                     justify-content: space-around;
                     transform: translateX(-100%);
-                    background-color: #202020;
-                    transition: 1.2s;
+                    background-color: $theme;
                     .fa-angle-down {
                         display: none;
                     }
@@ -545,7 +446,6 @@
                 }
                 .acces {
                     position: absolute;
-                    //background-color: $theme;
                     width: 100%;
                     padding-bottom: 1rem;
                     top: 66rem;

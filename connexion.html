@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container_connexion">
         <form action="">
             <div class="container_formulaire">
                 <div class="div_image">
@@ -20,13 +20,14 @@
                 </div>
                 <div class="div_formulaire">
                     <div>
-                        <label for="mdp">Pseudo</label> <br>
-                        <input type="text" name="mdp" id="mdp" placeholder="Saisir Votre pseudo...">
+                        <label for="inputEmail">Pseudo</label> <br>
+                        <input type="email" placeholder="Email" value="{{ last_username }}" name="email" id="inputEmail" autocomplete="email" required autofocus>
                     </div>
                     <div>
-                        <label for="mdp">Mot de passe</label> <br>
-                        <input type="password" name="mdp" id="mdp" placeholder=" Saisir Votre mot de passe...">
+                        <label for="inputPassword">Mot de passe</label> <br>
+                        <input type="password" placeholder="Password" name="password" id="inputPassword" autocomplete="current-password" required>
                     </div>
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
                     <div>
                         <button type="submit"> Connexion</button>
                     </div>
