@@ -29,8 +29,8 @@
     }
     
     @mixin radius {
-        border-radius: 17px;
-        padding: 8px 25px;
+        border-radius: 20px;
+        padding: 3px 10px;
         border: 2px solid $color;
     }
     
@@ -51,6 +51,7 @@
             display: flex;
             align-items: center;
             flex-wrap: wrap;
+            justify-content: space-around;
             .hamburger {
                 background-color: transparent;
                 width: 75px;
@@ -109,9 +110,8 @@
                 transition: top 0.4s ease-in-out, transform 0.4s 0.4s ease-in-out;
             }
             .logo {
-                //border: 1px salmon dotted;
-                width: 80px;
-                height: 80px;
+                width: 50px;
+                height: 50px;
                 img {
                     width: 100%;
                     height: 100%;
@@ -133,14 +133,14 @@
                     color: $color;
                     text-decoration: none;
                     padding: 0px 17px;
-                    font-size: 1.8rem;
+                    font-size: larger;
                     opacity: 0.7;
                 }
                 li i {
                     color: $color;
                     opacity: 0.7;
                     cursor: pointer;
-                    font-size: large;
+                    font-size: small;
                 }
                 li a:hover,
                 li i:hover {
@@ -222,6 +222,7 @@
         justify-content: center;
         background-color: #0c091c;
         color: $color;
+        padding: 0px 5rem;
         .main_container {
             height: 100%;
             .principale {
@@ -230,9 +231,11 @@
                 //background-color: #0c091c;
                 color: $color;
                 display: flex;
+                align-items: center;
                 justify-content: space-around;
                 .image_blockchain {
                     width: 45%;
+                    height: 100%;
                     img {
                         width: 100%;
                         height: 100%;
@@ -244,7 +247,7 @@
                     padding-left: 1.7rem;
                     width: 50%;
                     h1 {
-                        font-size: 50px;
+                        font-size: 40px;
                     }
                     ul {
                         padding-top: 1rem;
@@ -257,7 +260,7 @@
                         li a {
                             text-decoration: none;
                             color: $color;
-                            font-size: 1.5rem;
+                            font-size: 1.3rem;
                             pointer-events: none;
                         }
                     }
@@ -272,7 +275,7 @@
                 justify-content: space-around;
                 align-items: center;
                 .image_bitcoin {
-                    width: 40%;
+                    width: 43%;
                     img {
                         width: 100%;
                         object-fit: cover;
@@ -281,7 +284,7 @@
                 }
                 .citation {
                     padding-left: 2rem;
-                    width: 40%;
+                    width: 47%;
                     blockquote {
                         width: 100%;
                         padding: 25px;
@@ -292,7 +295,7 @@
                         .blockquote__text {
                             font-family: Georgia, 'Times New Roman', Times, serif;
                             font-style: italic;
-                            font-size: 2rem;
+                            font-size: 1.7rem;
                             line-height: 1.5;
                         }
                     }
@@ -325,13 +328,15 @@
                     box-shadow: 0 15px 50px black;
                     transition: 0.3s;
                     border-radius: 17px;
-                    width: 40%;
+                    width: 45%;
+                    //border: 1px solid white;
+                    height: 50%;
                     display: flex;
-                    background: rgb(18, 18, 18);
+                    background: #0a061e;
                     flex-direction: column;
                     align-items: center;
                     .image_shiba {
-                        width: 45%;
+                        width: 27%;
                         img {
                             width: 100%;
                         }
@@ -341,15 +346,17 @@
                         padding: 2px 16px;
                         text-align: center;
                         font-size: large;
+                        color: $color;
                     }
                 }
                 .card:hover {
-                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 8px 16px 0 #140f2d;
                 }
                 .radius {
-                    width: 40%;
+                    width: 45%;
+                    height: 50%;
                     box-sizing: border-box;
-                    background: rgb(18, 18, 18);
+                    background: #0c0821;
                     border-radius: 17px;
                     box-shadow: 0 15px 50px black;
                     opacity: 0;
@@ -365,11 +372,11 @@
                     }
                     .texte_doge {
                         padding-top: 2rem;
-                        font-size: x-large;
+                        font-size: larger;
                     }
                 }
                 .radius:hover {
-                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                    box-shadow: 0 8px 16px 0 #140f2d;
                 }
             }
             .meta {
@@ -377,12 +384,15 @@
                 margin-top: 1rem;
                 display: flex;
                 justify-content: space-around;
+                .image_meta {
+                    width: 50%;
+                }
                 .texte_meta {
                     width: 50%;
                     display: flex;
                     align-items: center;
                     p {
-                        font-size: 3rem;
+                        font-size: 2rem;
                         font-family: Helvetica, Arial, sans-serif;
                     }
                 }

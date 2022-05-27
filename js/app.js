@@ -34,9 +34,6 @@ boite.addEventListener('click', function(e) {
     e.target.classList.toggle('active')
 })
 
-
-
-
 //Api Observer
 //On déclare notre div
 const radius = document.querySelector('.radius');
@@ -52,6 +49,7 @@ function handleIntersect(entries) {
             if (entry.isIntersecting) {
                 entry.target.classList.toggle('show')
                 entry.target.style.opacity = 1;
+                console.log(entry);
             }
         })
         //console.log(entries);
