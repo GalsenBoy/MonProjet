@@ -36,7 +36,7 @@
     
     body {
         background-color: $theme;
-        .container {
+        .app-container {
             display: grid;
             grid-template-rows: auto 1fr auto;
         }
@@ -48,10 +48,11 @@
         z-index: 2;
         width: 100%;
         .header_container {
+            border: 1px solid white;
             display: flex;
             align-items: center;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
             .hamburger {
                 background-color: transparent;
                 width: 75px;
@@ -156,7 +157,7 @@
                     flex-direction: column;
                     position: absolute;
                     display: none;
-                    top: 40px;
+                    top: 30px;
                     height: auto;
                     width: 250px;
                     background-color: rgb(226, 224, 224);
@@ -167,9 +168,9 @@
                         color: black;
                         display: block;
                         width: 100%;
-                        padding: 8px 12px;
+                        padding: 6px 12px;
                         text-align: center;
-                        font-size: larger;
+                        font-size: 1rem;
                         font-family: serif;
                     }
                     li a:hover {
@@ -320,7 +321,6 @@
             .meme_coin {
                 margin: 5rem 0;
                 padding: 5rem 0;
-                z-index: -100;
                 color: $color;
                 display: flex;
                 justify-content: space-around;

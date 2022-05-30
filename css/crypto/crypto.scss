@@ -30,7 +30,7 @@ main {
                 //border: 1px solid salmon;
                 .image_btc {
                     //border: 1px solid aqua;
-                    width: 45%;
+                    width: 40%;
                     img {
                         width: 100%;
                         object-fit: cover;
@@ -43,23 +43,23 @@ main {
                     box-shadow: 0px 5px 10px #C29224;
                 }
                 .definition_blockchain {
-                    width: 45%;
+                    width: 40%;
                     p,
                     ul {
-                        font-size: x-large;
+                        font-size: large;
                         padding: 0.7rem;
+                        list-style-type: disc;
                     }
                     ul {
                         padding-left: 2.5rem;
                     }
                     h3 {
-                        font-size: xx-large;
+                        font-size: x-large;
                         padding: 1rem;
                     }
                 }
             }
             .text_btc {
-                //border: 1px solid red;
                 padding: 0 15%;
                 p,
                 h3,
@@ -68,7 +68,7 @@ main {
                 }
                 p,
                 ul {
-                    font-size: larger;
+                    font-size: large;
                 }
                 h3 {
                     font-size: x-large;
@@ -88,7 +88,7 @@ main {
                 .definition_Binance {
                     width: 45%;
                     p {
-                        font-size: x-large;
+                        font-size: larger;
                     }
                 }
             }
@@ -101,7 +101,8 @@ main {
                 }
                 p,
                 ul {
-                    font-size: larger;
+                    font-size: large;
+                    list-style: disc;
                 }
                 h3 {
                     font-size: x-large;
@@ -127,7 +128,7 @@ main {
                 .definition_defi {
                     width: 45%;
                     p {
-                        font-size: x-large;
+                        font-size: larger;
                     }
                 }
             }
@@ -137,6 +138,7 @@ main {
                 h3,
                 ul {
                     padding: 1rem;
+                    list-style: disc;
                 }
                 p,
                 ul {
@@ -172,7 +174,7 @@ main {
                     //border: 1px solid white;
                     padding: 1rem;
                     p {
-                        font-size: larger;
+                        font-size: large;
                         padding: 0.5rem;
                     }
                 }
@@ -200,7 +202,7 @@ main {
                 .definition_minage {
                     width: 45%;
                     p {
-                        font-size: xx-large;
+                        font-size: x-large;
                     }
                 }
             }

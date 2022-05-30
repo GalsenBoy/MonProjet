@@ -1,33 +1,4 @@
-/*
-const body = document.querySelector('body');
-const crypto = document.querySelector('#crypto')
-crypto.addEventListener('mouseover', function(e) {
-    document.getElementById('ul_crypto').style.display = "block";
-    document.getElementById('ul_nft').style.display = "none";
-    document.getElementById('ul_metavers').style.display = "none";
-    body.addEventListener('click', function() {
-        document.getElementById('ul_crypto').style.display = "none";
-    })
-})
-const nft = document.querySelector("#nft")
-nft.addEventListener('mouseover', function(e) {
-    document.getElementById('ul_nft').style.display = "block";
-    document.getElementById('ul_crypto').style.display = "none";
-    document.getElementById('ul_metavers').style.display = "none";
-    body.addEventListener('click', function() {
-        document.getElementById('ul_nft').style.display = "none";
-    })
-})
-const metavers = document.querySelector('#metavers')
-metavers.addEventListener('mouseover', function(e) {
-    document.getElementById('ul_metavers').style.display = "block";
-    document.getElementById('ul_nft').style.display = "none";
-    document.getElementById('ul_crypto').style.display = "none";
-    body.addEventListener('click', function() {
-        document.getElementById('ul_metavers').style.display = "none";
-    })
-})
-*/
+let body = document.querySelector('body')
 let boite = document.querySelector('.hamburger');
 boite.addEventListener('click', function(e) {
     body.classList.toggle('open');
@@ -49,7 +20,6 @@ function handleIntersect(entries) {
             if (entry.isIntersecting) {
                 entry.target.classList.toggle('show')
                 entry.target.style.opacity = 1;
-                console.log(entry);
             }
         })
         //console.log(entries);
@@ -58,3 +28,4 @@ function handleIntersect(entries) {
 const observer = new IntersectionObserver(handleIntersect, options);
 //On observe notre div radius
 observer.observe(radius);
+observer.observe(card)

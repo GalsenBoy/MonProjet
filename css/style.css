@@ -9,7 +9,7 @@ body {
   background-color: #110D26;
 }
 
-body .container {
+body .app-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: auto 1fr auto;
@@ -24,6 +24,7 @@ header {
 }
 
 header .header_container {
+  border: 1px solid white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,8 +33,9 @@ header .header_container {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 header .header_container .hamburger {
@@ -196,7 +198,7 @@ header .header_container ul ul {
           flex-direction: column;
   position: absolute;
   display: none;
-  top: 40px;
+  top: 30px;
   height: auto;
   width: 250px;
   background-color: #e2e0e0;
@@ -211,9 +213,9 @@ header .header_container ul ul li a {
   color: black;
   display: block;
   width: 100%;
-  padding: 8px 12px;
+  padding: 6px 12px;
   text-align: center;
-  font-size: larger;
+  font-size: 1rem;
   font-family: serif;
 }
 
@@ -422,7 +424,6 @@ main .main_container .cryptommonnaie .citation .blockquote--quote::before {
 main .main_container .meme_coin {
   margin: 5rem 0;
   padding: 5rem 0;
-  z-index: -100;
   color: #fdf4f4;
   display: -webkit-box;
   display: -ms-flexbox;

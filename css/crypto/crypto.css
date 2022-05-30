@@ -30,7 +30,7 @@ main .crypto_container .blockchain .partie_crypto {
 }
 
 main .crypto_container .blockchain .partie_crypto .image_btc {
-  width: 45%;
+  width: 40%;
 }
 
 main .crypto_container .blockchain .partie_crypto .image_btc img {
@@ -49,13 +49,14 @@ main .crypto_container .blockchain .partie_crypto .definition_blockchain:hover {
 }
 
 main .crypto_container .blockchain .partie_crypto .definition_blockchain {
-  width: 45%;
+  width: 40%;
 }
 
 main .crypto_container .blockchain .partie_crypto .definition_blockchain p,
 main .crypto_container .blockchain .partie_crypto .definition_blockchain ul {
-  font-size: x-large;
+  font-size: large;
   padding: 0.7rem;
+  list-style-type: disc;
 }
 
 main .crypto_container .blockchain .partie_crypto .definition_blockchain ul {
@@ -63,7 +64,7 @@ main .crypto_container .blockchain .partie_crypto .definition_blockchain ul {
 }
 
 main .crypto_container .blockchain .partie_crypto .definition_blockchain h3 {
-  font-size: xx-large;
+  font-size: x-large;
   padding: 1rem;
 }
 
@@ -79,7 +80,7 @@ main .crypto_container .blockchain .text_btc ul {
 
 main .crypto_container .blockchain .text_btc p,
 main .crypto_container .blockchain .text_btc ul {
-  font-size: larger;
+  font-size: large;
 }
 
 main .crypto_container .blockchain .text_btc h3 {
@@ -111,7 +112,7 @@ main .crypto_container .bloc_bnb .partie_bnb .definition_Binance {
 }
 
 main .crypto_container .bloc_bnb .partie_bnb .definition_Binance p {
-  font-size: x-large;
+  font-size: larger;
 }
 
 main .crypto_container .bloc_bnb .text_bnb {
@@ -126,7 +127,8 @@ main .crypto_container .bloc_bnb .text_bnb ul {
 
 main .crypto_container .bloc_bnb .text_bnb p,
 main .crypto_container .bloc_bnb .text_bnb ul {
-  font-size: larger;
+  font-size: large;
+  list-style: disc;
 }
 
 main .crypto_container .bloc_bnb .text_bnb h3 {
@@ -167,7 +169,7 @@ main .crypto_container .bloc_defi .partie_defi .definition_defi {
 }
 
 main .crypto_container .bloc_defi .partie_defi .definition_defi p {
-  font-size: x-large;
+  font-size: larger;
 }
 
 main .crypto_container .bloc_defi .texte_defi {
@@ -178,6 +180,7 @@ main .crypto_container .bloc_defi .texte_defi p,
 main .crypto_container .bloc_defi .texte_defi h3,
 main .crypto_container .bloc_defi .texte_defi ul {
   padding: 1rem;
+  list-style: disc;
 }
 
 main .crypto_container .bloc_defi .texte_defi p,
@@ -216,7 +219,7 @@ main .crypto_container .bloc_meme .partie_meme .texte_meme {
 }
 
 main .crypto_container .bloc_meme .partie_meme .texte_meme p {
-  font-size: larger;
+  font-size: large;
   padding: 0.5rem;
 }
 
@@ -257,7 +260,7 @@ main .crypto_container .bloc_minage .partie_minage .definition_minage {
 }
 
 main .crypto_container .bloc_minage .partie_minage .definition_minage p {
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 main .crypto_container .bloc_minage .texte_minage {
