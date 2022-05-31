@@ -4,46 +4,65 @@
     padding: 0;
 }
 
-.communaute_container {
-    border: 1px solid black;
-    background-color: #0c091c;
-    color: white;
-    width: 550px;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    margin: 5rem;
-    .persona {
-        display: flex;
-        padding: 0.5rem;
-        .avatar {
-            border: 1px solid red;
-            border-radius: 50%;
-            width: 40px;
-            height: 40px;
-        }
-        .identite {
-            margin-left: 0.5rem;
-            p {
-                font-size: small;
+body {
+    background-color: #110D26;
+}
+
+.app_container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    .communaute_container {
+        border: 1px solid black;
+        background-color: #0c091c;
+        color: white;
+        width: 50%;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        .persona {
+            display: flex;
+            padding: 0.5rem;
+            .avatar {
+                border: 1px solid red;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+            }
+            .identite {
+                margin-left: 0.5rem;
+                p {
+                    font-size: small;
+                }
+            }
+            .identite:nth-child(1) {
+                text-decoration: underline;
             }
         }
-        .identite:nth-child(1) {
-            text-decoration: underline;
+        .analyse {
+            padding: 1rem;
+            p {
+                padding: 0.3rem;
+            }
+        }
+        .commentaire {
+            display: flex;
+            justify-content: flex-end;
+            padding-bottom: 1rem;
+            padding-right: 3rem;
+            button {
+                border-radius: 20px;
+                padding: 3px 10px;
+                border: 2px solid white;
+                cursor: pointer;
+            }
         }
     }
-    .analyse {
-        padding: 1rem;
-    }
-    .commentaire {
-        display: flex;
-        justify-content: flex-end;
-        padding-bottom: 1rem;
-        padding-right: 3rem;
-        button {
-            border-radius: 20px;
-            padding: 3px 10px;
-            border: 2px solid white;
-            cursor: pointer;
+}
+
+@media screen and (max-width:444px) {
+    .app_container {
+        .communaute_container {
+            width: 100%;
         }
     }
 }

@@ -5,47 +5,64 @@
   padding: 0;
 }
 
-.communaute_container {
+body {
+  background-color: #110D26;
+}
+
+.app_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+
+.app_container .communaute_container {
   border: 1px solid black;
   background-color: #0c091c;
   color: white;
-  width: 550px;
+  width: 50%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  margin: 5rem;
 }
 
-.communaute_container .persona {
+.app_container .communaute_container .persona {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0.5rem;
 }
 
-.communaute_container .persona .avatar {
+.app_container .communaute_container .persona .avatar {
   border: 1px solid red;
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 
-.communaute_container .persona .identite {
+.app_container .communaute_container .persona .identite {
   margin-left: 0.5rem;
 }
 
-.communaute_container .persona .identite p {
+.app_container .communaute_container .persona .identite p {
   font-size: small;
 }
 
-.communaute_container .persona .identite:nth-child(1) {
+.app_container .communaute_container .persona .identite:nth-child(1) {
   text-decoration: underline;
 }
 
-.communaute_container .analyse {
+.app_container .communaute_container .analyse {
   padding: 1rem;
 }
 
-.communaute_container .commentaire {
+.app_container .communaute_container .analyse p {
+  padding: 0.3rem;
+}
+
+.app_container .communaute_container .commentaire {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,10 +73,16 @@
   padding-right: 3rem;
 }
 
-.communaute_container .commentaire button {
+.app_container .communaute_container .commentaire button {
   border-radius: 20px;
   padding: 3px 10px;
   border: 2px solid white;
   cursor: pointer;
+}
+
+@media screen and (max-width: 444px) {
+  .app_container .communaute_container {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=communatute.css.map */
