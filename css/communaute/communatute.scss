@@ -1,62 +1,49 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-@mixin radius {
-    border-radius: 17px;
-    padding: 8px 25px;
-    border: 2px solid white;
-}
-
-body {
-    background-color: rgb(27, 26, 26);
-}
-
-main {
-    .communaute_container {
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: rgb(27, 26, 26);
-        display: grid;
-        grid-template-columns: 1fr 40%;
-        color: white;
-        .analyse_container {
-            border-radius: 17px;
-            padding: 16px;
-            background-color: rgb(10, 10, 10);
-            margin: 1rem;
+.communaute_container {
+    border: 1px solid black;
+    background-color: #0c091c;
+    color: white;
+    width: 550px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin: 5rem;
+    .persona {
+        display: flex;
+        padding: 0.5rem;
+        .avatar {
+            border: 1px solid red;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
         }
-        .partage {
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background: rgb(32, 32, 32);
-            .technique,
-            .fondamentale {
-                width: fit-content;
-                margin-bottom: 1rem;
-                @include radius();
+        .identite {
+            margin-left: 0.5rem;
+            p {
                 font-size: small;
-                flex-wrap: wrap;
             }
+        }
+        .identite:nth-child(1) {
+            text-decoration: underline;
+        }
+    }
+    .analyse {
+        padding: 1rem;
+    }
+    .commentaire {
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 1rem;
+        padding-right: 3rem;
+        button {
+            border-radius: 20px;
+            padding: 3px 10px;
+            border: 2px solid white;
+            cursor: pointer;
         }
     }
 }
-
-
-/*
-@media screen and (max-width:864) {
-    main {
-        .communaute_container {
-            .partage {
-                .technique {
-                    padding: 0;
-                }
-            }
-        }
-    }
-}
-*/
