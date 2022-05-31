@@ -14,6 +14,7 @@ main .nft_container {
 }
 
 main .nft_container .bloc_nft .partie_nft {
+  margin-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,7 +27,7 @@ main .nft_container .bloc_nft .partie_nft {
 }
 
 main .nft_container .bloc_nft .partie_nft .image_nft {
-  width: 45%;
+  width: 40%;
 }
 
 main .nft_container .bloc_nft .partie_nft .image_nft img {
@@ -43,16 +44,17 @@ main .nft_container .bloc_nft .partie_nft .definition_nft:hover {
 }
 
 main .nft_container .bloc_nft .partie_nft .definition_nft {
-  width: 45%;
+  width: 40%;
 }
 
 main .nft_container .bloc_nft .partie_nft .definition_nft p {
-  font-size: xx-large;
+  font-size: larger;
   padding: 1.5rem;
 }
 
 main .nft_container .bloc_nft .texte_nft {
   padding: 0 15%;
+  margin-bottom: 5rem;
 }
 
 main .nft_container .bloc_nft .texte_nft p {
@@ -73,6 +75,7 @@ main .nft_container .top {
 
 main .nft_container .top .nft_marquant {
   width: 45%;
+  margin-bottom: 5rem;
 }
 
 main .nft_container .top .nft_marquant ol {
@@ -105,6 +108,7 @@ main .nft_container .top .gallerie {
   grid-gap: 5px;
   padding: 5px;
   width: 60%;
+  margin-bottom: 5rem;
 }
 
 main .nft_container .top .gallerie img {
