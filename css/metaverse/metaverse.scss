@@ -19,6 +19,7 @@ main {
         width: 100%;
         .bloc_metavers {
             .patie_metavers {
+                margin-bottom: 5rem;
                 @include flex();
                 .image_metavers {
                     width: 35%;
@@ -36,16 +37,17 @@ main {
                 .definition_metavers {
                     width: 45%;
                     p {
-                        font-size: xx-large;
+                        font-size: x-large;
                         padding-left: 0.5rem;
                     }
                 }
             }
             .texte_metavers {
+                margin-bottom: 5rem;
                 padding: 0 15%;
                 p {
                     padding: 1rem;
-                    font-size: x-large;
+                    font-size: larger;
                 }
             }
         }

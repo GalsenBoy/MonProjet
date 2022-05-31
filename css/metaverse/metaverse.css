@@ -14,6 +14,7 @@ main .metaver_container {
 }
 
 main .metaver_container .bloc_metavers .patie_metavers {
+  margin-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,17 +49,18 @@ main .metaver_container .bloc_metavers .patie_metavers .definition_metavers {
 }
 
 main .metaver_container .bloc_metavers .patie_metavers .definition_metavers p {
-  font-size: xx-large;
+  font-size: x-large;
   padding-left: 0.5rem;
 }
 
 main .metaver_container .bloc_metavers .texte_metavers {
+  margin-bottom: 5rem;
   padding: 0 15%;
 }
 
 main .metaver_container .bloc_metavers .texte_metavers p {
   padding: 1rem;
-  font-size: x-large;
+  font-size: larger;
 }
 
 main .metaver_container .meta {
