@@ -28,4 +28,43 @@ function handleIntersect(entries) {
 const observer = new IntersectionObserver(handleIntersect, options);
 //On observe notre div radius
 observer.observe(radius);
-observer.observe(card)
+
+const sr = ScrollReveal();
+sr.reveal('.image_blockchain', {
+    origin: 'left', //position de début de l'élément avant le reveal
+    rotate: { x: 0, y: 0, z: -55 },
+    scale: 0.5,
+    distance: '100px',
+    duration: 2000,
+});
+
+sr.reveal('.titre', {
+    delay: 1200,
+    duration: 1500,
+    distance: '85px'
+})
+
+sr.reveal('.image_bitcoin', {
+    scale: 0.5,
+    duration: 2000,
+
+})
+
+sr.reveal('.citation', {
+    scale: 0.5,
+    duration: 2000,
+    delay: 800
+})
+
+sr.reveal('.image_meta', {
+    origin: 'left',
+    distance: '150px',
+    duration: 2000,
+
+})
+sr.reveal('.texte_meta', {
+    origin: 'right',
+    distance: '150px',
+    duration: 2300,
+    delay: 700
+})
