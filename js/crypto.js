@@ -1,26 +1,71 @@
-const crypto = ScrollReveal({
+const crypto = ScrollReveal();
+crypto.reveal('.image_btc', {
     origin: 'left',
-    duration: 1500,
-    distance: '50px'
+    duration: 2000,
+    distance: '50px',
+
 });
-crypto.reveal('.image_btc');
-crypto.reveal('.image_minage');
-crypto.reveal('.image_bnb');
-crypto.reveal('.image_defi');
-crypto.reveal('.image_shiba');
+crypto.reveal('.image_minage', {
+    origin: 'left',
+    duration: 2000,
+    distance: '50px',
+
+});
+crypto.reveal('.image_bnb', {
+    origin: 'left',
+    duration: 2000,
+    distance: '50px',
+
+});
+crypto.reveal('.image_defi', {
+    origin: 'left',
+    duration: 2000,
+    distance: '50px',
+
+});
+crypto.reveal('.image_shiba', {
+    origin: 'left',
+    duration: 2000,
+    distance: '50px',
+
+});
 
 /********************************************** */
-const wordReveal = ScrollReveal({
-    duration: 1500,
+
+crypto.reveal('.definition_blockchain', {
+    delay: 800,
+    origin: 'right',
+    duration: 2000,
     distance: '85px'
 })
-wordReveal.reveal('.definition_blockchain', {
-    delay: 500,
-    duration: 1500,
+crypto.reveal('.definition_Binance', {
+    delay: 800,
+    origin: 'right',
+    duration: 2000,
     distance: '85px'
 })
-wordReveal.reveal('h3');
-wordReveal.reveal('li');
-wordReveal.reveal('p', {
-    delay: 300
+crypto.reveal('.definition_defi', {
+    delay: 800,
+    origin: 'right',
+    duration: 2000,
+    distance: '85px'
+})
+crypto.reveal('.definition_minage', {
+    delay: 800,
+    origin: 'right',
+    duration: 2000,
+    distance: '85px'
+})
+crypto.reveal('h3', {
+    duration: 1500,
+    distance: '85px',
+    delay: 500
+});
+crypto.reveal('li', {
+    duration: 1500,
+    distance: '85px'
+});
+crypto.reveal('.txt-crypto', {
+    duration: 1500,
+    distance: '85px'
 });
