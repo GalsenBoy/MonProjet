@@ -8,8 +8,7 @@ boite.addEventListener('click', function(e) {
 //Api Observer
 //On déclare notre div
 const radius = document.querySelector('.radius');
-const card = document.querySelector('.card')
-    //Nos paramètres d'options
+//Nos paramètres d'options
 let options = {
         root: null,
         threshold: 0.5
@@ -31,7 +30,7 @@ observer.observe(radius);
 
 const sr = ScrollReveal();
 sr.reveal('.image_blockchain', {
-    origin: 'left', //position de début de l'élément avant le reveal
+    origin: 'left',
     rotate: { x: 0, y: 0, z: -55 },
     scale: 0.5,
     distance: '100px',
@@ -67,4 +66,15 @@ sr.reveal('.texte_meta', {
     distance: '150px',
     duration: 2300,
     delay: 700
+})
+
+sr.reveal('.image_shiba', {
+    duration: 1000,
+    distance: '50px'
+})
+
+sr.reveal('.texte_shiba', {
+    delay: 500,
+    duration: 1500,
+    distance: '50px'
 })
