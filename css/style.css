@@ -38,6 +38,7 @@ header .header_container {
 }
 
 header .header_container .hamburger {
+  border: 1px solid white;
   background-color: transparent;
   width: 75px;
   height: 50px;
@@ -49,8 +50,8 @@ header .header_container .hamburger {
 }
 
 header .header_container .hamburger .container-lignes {
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -63,7 +64,7 @@ header .header_container .hamburger .container-lignes .ligne {
   position: absolute;
   border-radius: 10px;
   width: 100%;
-  height: 5px;
+  height: 2px;
   background: #fdf4f4;
 }
 
@@ -72,11 +73,11 @@ header .header_container .hamburger .container-lignes .ligne:nth-child(1) {
 }
 
 header .header_container .hamburger .container-lignes .ligne:nth-child(2) {
-  top: 20px;
+  top: 15px;
 }
 
 header .header_container .hamburger .container-lignes .ligne:nth-child(3) {
-  top: 40px;
+  top: 30px;
 }
 
 header .header_container .hamburger .container-lignes .ligne:nth-child(1),
@@ -135,11 +136,6 @@ header .header_container .logo img {
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
   cursor: pointer;
-}
-
-header .header_container .logo title {
-  color: white;
-  font-size: 20px;
 }
 
 header .header_container ul {
@@ -230,7 +226,7 @@ header .header_container ul ul li {
 header .header_container .acces .btn_connexion,
 header .header_container .acces .btn_inscription {
   border-radius: 20px;
-  padding: 3px 10px;
+  padding: 1px 10px 3px 10px;
   border: 2px solid #fdf4f4;
   cursor: pointer;
   -webkit-animation-name: opacity;
@@ -244,6 +240,7 @@ header .header_container .acces .btn_connexion {
   color: #fdf4f4;
   font-size: large;
   margin-right: 10px;
+  text-align: center;
 }
 
 header .header_container .acces .btn_connexion:hover {
@@ -262,7 +259,7 @@ header .header_container .acces .btn_inscription {
 }
 
 header .header_container .acces .btn_inscription:hover {
-  background-color: #47464d;
+  background-color: #110D26;
   color: #fdf4f4;
   -webkit-animation-name: btn;
           animation-name: btn;
@@ -598,11 +595,14 @@ footer {
   header .header_container ul {
     position: absolute;
     top: 0px;
-    height: 66rem;
+    height: 35rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -645,24 +645,31 @@ footer {
   header .header_container .logo {
     z-index: 1;
     margin-top: 0.5rem;
-    height: 92px;
-    width: 92px;
+    width: 50px;
+    height: 50px;
   }
   header .header_container .logo img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    cursor: pointer;
   }
   main .main_container .titre_metavers {
     margin-top: 0.7rem;
   }
-  .open .menu,
-  .open .acces {
+  .open .menu {
     -webkit-transform: translateX(0);
             transform: translateX(0);
     -webkit-transition: 1.2s;
     transition: 1.2s;
+  }
+  .open .acces {
+    display: block;
   }
 }
 
