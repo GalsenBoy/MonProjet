@@ -2,7 +2,7 @@ let body = document.querySelector('body')
 let boite = document.querySelector('.hamburger');
 boite.addEventListener('click', function(e) {
     body.classList.toggle('open');
-    e.target.classList.toggle('active')
+    e.target.classList.toggle('active');
 })
 
 //Api Observer
@@ -66,7 +66,8 @@ sr.reveal('.image_meta', {
 })
 
 sr.reveal('.texte_meta', {
-    origin: 'right',
+    origin: 'top',
+    scale: 0.5,
     distance: '85px',
     duration: 2300,
     delay: 700
@@ -82,3 +83,5 @@ sr.reveal('.texte_shiba', {
     duration: 1500,
     distance: '50px'
 })
+
+document.getElementById('year').innerHTML = (new Date()).getFullYear();

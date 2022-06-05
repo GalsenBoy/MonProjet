@@ -40,6 +40,7 @@ header .header_container {
 header .header_container .hamburger {
   border: 1px solid white;
   background-color: transparent;
+  margin-top: 00.5rem;
   width: 75px;
   height: 50px;
   border: none;
@@ -51,7 +52,7 @@ header .header_container .hamburger {
 
 header .header_container .hamburger .container-lignes {
   width: 40px;
-  height: 30px;
+  height: 25px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -73,11 +74,11 @@ header .header_container .hamburger .container-lignes .ligne:nth-child(1) {
 }
 
 header .header_container .hamburger .container-lignes .ligne:nth-child(2) {
-  top: 15px;
+  top: 12px;
 }
 
 header .header_container .hamburger .container-lignes .ligne:nth-child(3) {
-  top: 30px;
+  top: 24px;
 }
 
 header .header_container .hamburger .container-lignes .ligne:nth-child(1),
@@ -122,8 +123,8 @@ header .header_container .hamburger.active .ligne:nth-child(3) {
 }
 
 header .header_container .logo {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 header .header_container .logo img {
@@ -221,6 +222,10 @@ header .header_container ul ul li a:hover {
 
 header .header_container ul ul li {
   border: 1px solid #110D26;
+}
+
+header .header_container .acces {
+  padding-left: 5rem;
 }
 
 header .header_container .acces .btn_connexion,
@@ -533,7 +538,43 @@ main .main_container .meta .texte_meta p {
 }
 
 footer {
-  background-color: red;
+  background-color: #110D26;
+  color: #fdf4f4;
+}
+
+footer h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+footer .footer_container {
+  padding: 2rem 5rem;
+}
+
+footer .footer_container .rr_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer_container .rr_container .reseau {
+  margin: 1rem 0;
+  font-size: larger;
+  cursor: pointer;
+}
+
+footer .footer_container .copyright {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #0c091c;
 }
 
 .radius.show {
@@ -578,7 +619,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 922px) {
   header {
     color: black;
   }
@@ -591,11 +632,13 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   header .header_container ul {
     position: absolute;
     top: 0px;
     height: 35rem;
+    margin-top: 2rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -620,24 +663,10 @@ footer {
   header .header_container ul li ul {
     visibility: hidden;
   }
-  header .header_container .acces {
-    position: absolute;
-    width: 100%;
-    padding-bottom: 1rem;
-    top: 3rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-    overflow: hidden;
-    z-index: 1;
-    background-color: red;
+  header .header_container ul .acces {
+    padding: 0;
   }
-  header .header_container .acces .btn_connexion {
+  header .header_container ul .acces .btn_connexion {
     margin-right: 2rem;
   }
   header .header_container .hamburger {
@@ -647,8 +676,8 @@ footer {
   header .header_container .logo {
     z-index: 1;
     margin-top: 0.5rem;
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
   }
   header .header_container .logo img {
     width: 100%;
@@ -669,11 +698,6 @@ footer {
             transform: translateX(0);
     -webkit-transition: 1.2s;
     transition: 1.2s;
-  }
-  .open .acces {
-    display: block;
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
   }
 }
 
@@ -753,6 +777,12 @@ footer {
   main .main_container .meta .texte_meta {
     width: 90%;
     text-align: center;
+  }
+  footer .footer_container {
+    padding: 0;
+  }
+  footer .footer_container .rr_container {
+    padding: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
