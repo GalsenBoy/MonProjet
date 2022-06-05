@@ -34,25 +34,25 @@ crypto.reveal('.image_shiba', {
 
 crypto.reveal('.definition_blockchain', {
     delay: 800,
-    origin: 'right',
+    scale: 0.5,
     duration: 2000,
     distance: '85px'
 })
 crypto.reveal('.definition_Binance', {
     delay: 800,
-    origin: 'right',
+    scale: 0.5,
     duration: 2000,
     distance: '85px'
 })
 crypto.reveal('.definition_defi', {
     delay: 800,
-    origin: 'right',
+    scale: 0.5,
     duration: 2000,
     distance: '85px'
 })
 crypto.reveal('.definition_minage', {
     delay: 800,
-    origin: 'right',
+    scale: 0.5,
     duration: 2000,
     distance: '85px'
 })

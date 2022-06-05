@@ -14,7 +14,7 @@ metaverse.reveal('.image_meta', {
 });
 metaverse.reveal('.definition_metavers', {
     delay: 1000,
-    origin: 'right',
+    scale: 0.5,
     duration: 2000,
     distance: '85px'
 })
@@ -24,7 +24,7 @@ metaverse.reveal('.txt_metavers', {
 })
 
 metaverse.reveal('.txt_meta', {
-    origin: 'right',
+    origin: 'top',
     duration: 2000,
     distance: '80px',
     interval: 200,
