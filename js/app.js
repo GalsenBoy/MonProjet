@@ -28,6 +28,9 @@ const observer = new IntersectionObserver(handleIntersect, options);
 //On observe notre div radius
 observer.observe(radius);
 
+/*
+    
+
 const sr = ScrollReveal();
 sr.reveal('.image_blockchain', {
     origin: 'left',
@@ -78,3 +81,4 @@ sr.reveal('.texte_shiba', {
     duration: 1500,
     distance: '50px'
 })
+*/

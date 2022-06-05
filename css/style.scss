@@ -461,11 +461,14 @@
                     position: absolute;
                     width: 100%;
                     padding-bottom: 1rem;
-                    top: 66rem;
+                    top: 3rem;
                     display: flex;
                     justify-content: center;
                     transform: translateX(-100%);
+                    overflow: hidden;
+                    //display: none;
                     z-index: 1;
+                    background-color: red;
                     .btn_connexion {
                         margin-right: 2rem;
                     }
@@ -502,6 +505,7 @@
         }
         .open .acces {
             display: block;
+            transform: translateX(0);
         }
     }
     
@@ -512,18 +516,23 @@
     }
     
     @mixin widthColumn {
-        width: 100%;
+        width: 95%;
         margin: 2rem 0;
     }
     
     @media screen and (max-width:666px) {
         main {
+            padding: 0;
+            width: 100%;
             .main_container {
                 .principale {
                     @include flexColumn();
-                    .image_blockchain,
                     .titre {
-                        @include widthColumn();
+                        width: 95%;
+                    }
+                    .image_blockchain {
+                        width: 90%;
+                        margin: 2rem 0;
                     }
                 }
                 .cryptommonnaie {
@@ -533,11 +542,21 @@
                         @include widthColumn();
                     }
                 }
+                .meme_coin {
+                    @include flexColumn();
+                    .card,
+                    .radius {
+                        @include widthColumn();
+                    }
+                }
                 .meta {
                     @include flexColumn();
-                    .image_meta,
+                    .image_meta {
+                        width: 90%;
+                    }
                     .texte_meta {
-                        width: 100%;
+                        width: 90%;
+                        text-align: center;
                     }
                 }
             }
