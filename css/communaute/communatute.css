@@ -9,17 +9,30 @@ body {
   background-color: #110D26;
 }
 
-.app_container {
+.analyse_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.app_container .communaute_container {
+.analyse_container .partager {
+  padding: 1rem 0;
+}
+
+.analyse_container .partager button {
+  border-radius: 20px;
+  padding: 1px 10px 3px 10px;
+  border: 2px solid white;
+}
+
+.analyse_container .communaute_container {
   border: 1px solid black;
   background-color: #0c091c;
   color: white;
@@ -28,41 +41,41 @@ body {
   border-top-right-radius: 25px;
 }
 
-.app_container .communaute_container .persona {
+.analyse_container .communaute_container .persona {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 0.5rem;
 }
 
-.app_container .communaute_container .persona .avatar {
+.analyse_container .communaute_container .persona .avatar {
   border: 1px solid red;
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
 
-.app_container .communaute_container .persona .identite {
+.analyse_container .communaute_container .persona .identite {
   margin-left: 0.5rem;
 }
 
-.app_container .communaute_container .persona .identite p {
+.analyse_container .communaute_container .persona .identite p {
   font-size: small;
 }
 
-.app_container .communaute_container .persona .identite:nth-child(1) {
+.analyse_container .communaute_container .persona .identite:nth-child(1) {
   text-decoration: underline;
 }
 
-.app_container .communaute_container .analyse {
+.analyse_container .communaute_container .analyse {
   padding: 1rem;
 }
 
-.app_container .communaute_container .analyse p {
+.analyse_container .communaute_container .analyse p {
   padding: 0.3rem;
 }
 
-.app_container .communaute_container .commentaire {
+.analyse_container .communaute_container .commentaire {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -73,7 +86,7 @@ body {
   padding-right: 3rem;
 }
 
-.app_container .communaute_container .commentaire button {
+.analyse_container .communaute_container .commentaire button {
   border-radius: 20px;
   padding: 3px 10px;
   border: 2px solid white;
@@ -81,7 +94,7 @@ body {
 }
 
 @media screen and (max-width: 444px) {
-  .app_container .communaute_container {
+  .analyse_container .communaute_container {
     width: 100%;
   }
 }

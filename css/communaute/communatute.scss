@@ -8,10 +8,18 @@ body {
     background-color: #110D26;
 }
 
-.app_container {
+.analyse_container {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    .partager {
+        padding: 1rem 0;
+        button {
+            border-radius: 20px;
+            padding: 1px 10px 3px 10px;
+            border: 2px solid white;
+        }
+    }
     .communaute_container {
         border: 1px solid black;
         background-color: #0c091c;
@@ -60,7 +68,7 @@ body {
 }
 
 @media screen and (max-width:444px) {
-    .app_container {
+    .analyse_container {
         .communaute_container {
             width: 100%;
         }
